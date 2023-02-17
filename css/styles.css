@@ -69,3 +69,14 @@ img {
     display: block;
     width: 100%;
 }
+/* About Section STARTS!!!!! */
+.rotated-text {
+    transform: rotate(45deg);
+    transform-origin: center;
+}
+
+
+
+
+
+/* About Section ENDS!!!!! */
