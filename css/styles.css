@@ -73,14 +73,35 @@ img {
 .rotated-text {
     transform: rotate(270deg);
     transform-origin: center;
+    color: var(--main-gold);
 }
 .row{
-    height: 50vh;
+    height: 60vh;
     overflow: hidden;
 }
 .bg-1{
-    background: url("/assets/images/Heading2.png");
+    background: url("../assets/images/Heading2.png");
+    background-size: cover;
 }
+.bg-2{
+    background: url("../assets/images/motifonwhite.png");
+    background-size: cover;
+}
+.bg-3{
+    background: url("../assets/images/heading1.jpg");
+    background-size: cover;
+}
+.bg-4{
+    background: url("../assets/images/Motifonblue.jpg");
+    background-size: cover;
+}
+.bg-5{
+    background-color: var(--main-blue);
+}
+
+
+
+
 
 
 
