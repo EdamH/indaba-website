@@ -80,7 +80,7 @@ img {
     overflow: hidden;
 }
 .bg-1{
-    background: url("../assets/images/Heading2.png");
+    background: url("../assets/images/tun.jpg");
     background-size: cover;
 }
 .bg-2{
@@ -97,6 +97,12 @@ img {
 }
 .bg-5{
     background-color: var(--main-blue);
+}
+.bg-6{
+    background-color: #bfd6ed;
+}
+.bg-7{
+    background-color: #cdd9e4;
 }
 
 
