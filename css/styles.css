@@ -69,3 +69,38 @@ img {
     display: block;
     width: 100%;
 }
+
+/* Hackathon */
+
+.hackathon-header:after {
+    position: absolute;
+    content: '';
+    background-color: #011d47;
+    height: 1px;
+    width: 0px;
+    bottom: 650px;
+    left: 645px;
+    transition: 0.5s;
+
+}
+
+
+.hackathon-header:hover:after {
+    width: 100px;
+}
+
+.hackathon-header:before {
+    position: absolute;
+    content: '';
+    background-color: #011d47;
+    height: 3px;
+    width: 0;
+    bottom: 655px;
+    left: 660px;
+    transition: 0.3s;
+
+}
+
+.hackathon-header:hover:before {
+    width: 150px;
+}
