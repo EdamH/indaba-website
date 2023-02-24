@@ -107,10 +107,85 @@ img {
 
 
 
-
-
-
-
-
-
 /* About Section ENDS!!!!! */
+/* foooter and Pre-footer STARTS!!!!!! */
+footer {
+    font-size: 14px;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #f8f9fa;
+}
+
+footer .form-control {
+    border-color: #343a40;
+}
+
+footer .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+footer .btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+footer .btn-primary:focus,
+footer .btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+footer .bg-secondary {
+  background-color: #23272b;
+}
+
+footer .text-muted {
+  color: #adb5bd;
+}
+
+footer h5 {
+  color: #fff;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li:last-child {
+  margin-bottom: 0;
+}
+
+footer .input-group-addon {
+  background-color: #343a40;
+  border-color: #343a40;
+  color: #fff;
+}
+
+footer .input-group-addon i {
+  color: #adb5bd;
+}
+
+footer .form-control:focus {
+  border-color: #0062cc;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+footer .btn-primary.disabled,
+footer .btn-primary:disabled {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+@media (max-width: 767px) {
+  footer .row {
+    flex-direction: column;
+  }
+  
+  footer .col-md-3:first-child {
+    margin-bottom: 30px;
+  }
+}
+/* foooter and Pre-footer ENDS!!!!!! */
