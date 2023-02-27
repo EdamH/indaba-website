@@ -13,16 +13,16 @@ body {
 
 h1 {
   font-family:"Rubik";
-  font-size:11vh;
+  font-size:6vh;
   margin: 0;
   padding: 50px 0 0 50px;
 }
 
 h2 {
   font-family:"Rubik";
-  font-size:10vh;
+  font-size:4vh;
   margin: 0;
-  padding: 50px 0 50px 50px;
+  padding: 50px 0 0 50px;
 }
 
 section {
