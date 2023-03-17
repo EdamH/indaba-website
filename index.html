@@ -24,58 +24,35 @@
 
     </section>
     <!-- ****** -->
-    <section id="Hackaton-Section" style="background: url(./assets/images/motif.jpg);">
-        <div class="container"
-            style="background: url(./assets/images/motifonwhite.png);; box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;">
-            <div class="row justify-content-center" style="padding: 25px;">
-                <h1 class="hackathon-header" style="width: auto">HACKATHON INFORMATION</h1>
+    <section id="Hackaton-Section" >
+        <div class="description panel blue row m-0" style="background: url(./assets/images/motif.jpg);">
+            <div class="col">
+
             </div>
-            <div class="row" style="padding: 0 25px;">
-                <div class="col-lg col-sm-12 p-6 p-sm-0">
-                    <img src="./assets/images/hackathon3.jpeg"
-                        style="border-radius: 10px; transform:scale(0.9); "></img>
-                </div>
-                <div class="col-lg" style="margin: auto 0;">
-                    <p class="fs-4">In partnership with <a href=""
-                            style="color: #C4A250; text-decoration: none;">ZINDI</a>, we have prepared for you two
-                        hackathons with different levels of difficulty to suit your
-                        interests.</p>
-                    <p class="h3 fs-1" style="margin: 20px 0">Beginner Friendly Competition (24h):</p>
-                    <p class="fs-4">The aim of this competition is to introduce newcomers to the field of AI and to help
-                        them set their stepping stone in
-                        the world of Machine Learning. This Competition will be guided through Starter-Notebooks and our
-                        team’s assistance. If
-                        this is your first time participating in a ZINDI hackathon, this is the one for you.</p>
-                </div>
+            <div class="col">
+                <h1 style="color:aliceblue;">Hackaton Section</h1>
+                <p style="color:aliceblue; font-size: 2rem;">This section will hold info about the hackaton</p>
             </div>
-            <div class="row flex-sm-row-reverse" style="padding: 0 25px;">
-                <div class="col-lg col-sm-12 p-6 p-sm-0">
-                    <img src="./assets/images/hackathon3.jpeg" style="border-radius: 10px; transform:scale(0.9);"></img>
-                </div>
-                <div class="col-lg" style="margin: auto 0;">
-                    <p class="fs-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius velit itaque eos
-                        quibusdam
-                        praesentium.
-                        Corrupti porro unde cupiditate minima non ipsa et perferendis? Exercitationem laudantium hic
-                        eum.
-                        Ad, sequi obcaecati.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius velit itaque eos quibusdam
-                        praesentium.
-                        Corrupti porro unde cupiditate minima non ipsa et perferendis? Exercitationem laudantium hic
-                        eum.
-                        Ad, sequi obcaecati.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius velit itaque eos quibusdam
-                        praesentium.
-                        Corrupti porro unde cupiditate minima non ipsa et perferendis? Exercitationem laudantium hic
-                        eum.
-                        Ad, sequi obcaecati.</p>
-                </div>
-            </div>
+        </div>
+        
+        
+        <div class="panel red">
+            <h2>In partnership with <a href="" style="color: #f18a25; text-decoration: none;">ZINDI</a></h2>
+            <img src="./assets/images/zindi.png" style="margin-bottom: 20vh;">
+        </div>
+        <div class="panel orange d-flex flex-column justify-content-center p-5 m-0">
+            <p class="h1" style="margin-bottom: 15vh"><a href="" style="color: #f18a25; text-decoration: none;">48-hour</a> hackaton for you to test your abilities</h2>
+            <p class="fs-3">This competition will be a step higher in the level of difficulty and will target a real-life problem which will be
+            announced on the day of the competition. An extremely significant prize pool awaits the winners. If you have the
+            competitive spirit and you’re looking for a win to prove your skills, this is your go to choice. You can participate in
+            teams of two to three members or individually.</p>
+        </div>
+        <div class="panel">
         </div>
     </section>
     <!-- ****** -->
     <section id="Speakers-Section">
-
+   
     </section>
     <!-- ****** -->
     <section id="Program-Section">
@@ -87,7 +64,6 @@
     </section>
     <!-- ****** -->
     <section id="Footer">
-
     </section>
     <!-- ****** -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -96,6 +72,40 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
         crossorigin="anonymous"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script>
+            const descriptionPanel = document.querySelector('.description');
+
+            const pinDescriptionPanel = gsap.to(descriptionPanel, {
+                scrollTrigger: {
+                    trigger: descriptionPanel,
+                    start: "top top", 
+                    endTrigger: ".panel:last-child", 
+                    end: "bottom top",
+                    pin: true, 
+                    pinSpacing: false,
+                },
+            });
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.utils.toArray(".panel:not(.description)").forEach((panel, i) => {
+            ScrollTrigger.create({
+                trigger: panel,
+                start: "top top",
+                pin: true,
+                pinSpacing: false
+            });
+        });
+
+
+        ScrollTrigger.create({
+            snap: 1 / 4 // snap whole page to the closest section!
+        });
+    </script>
 </body>
 
 </html>
