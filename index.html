@@ -18,9 +18,11 @@
     <!-- END Nav -->
     <section id="Heading-Section">
 
+
     </section>
     <!-- ****** -->
     <section id="About-Section">
+
         <div id='hero'>
             <div class='layer-bg layer parallax' data-depth='0.10'></div>
             <div class='layer-1 layer parallax' data-depth='0.20'></div>
@@ -54,8 +56,31 @@
         </div>
     </section>
     <!-- ****** -->
-    <section id="Hackaton-Section">
+    <section id="Hackaton-Section" >
+        <div class="description panel blue row m-0" style="background: url(./assets/images/motif.jpg);">
+            <div class="col">
 
+            </div>
+            <div class="col">
+                <h1 style="color:aliceblue;">Hackaton Section</h1>
+                <p style="color:aliceblue; font-size: 2rem;">This section will hold info about the hackaton</p>
+            </div>
+        </div>
+        
+        
+        <div class="panel red">
+            <h2>In partnership with <a href="" style="color: #f18a25; text-decoration: none;">ZINDI</a></h2>
+            <img src="./assets/images/zindi.png" style="margin-bottom: 20vh;">
+        </div>
+        <div class="panel orange d-flex flex-column justify-content-center p-5 m-0">
+            <p class="h1" style="margin-bottom: 15vh"><a href="" style="color: #f18a25; text-decoration: none;">48-hour</a> hackaton for you to test your abilities</h2>
+            <p class="fs-3">This competition will be a step higher in the level of difficulty and will target a real-life problem which will be
+            announced on the day of the competition. An extremely significant prize pool awaits the winners. If you have the
+            competitive spirit and you’re looking for a win to prove your skills, this is your go to choice. You can participate in
+            teams of two to three members or individually.</p>
+        </div>
+        <div class="panel">
+        </div>
     </section>
     <!-- ****** -->
     <section id="Speakers-Section">
@@ -63,6 +88,7 @@
     </section>
     <!-- ****** -->
     <section id="Program-Section">
+
 
     </section>
     <!-- ****** -->
@@ -169,6 +195,40 @@
             const depth = layer.dataset.depth;
             const movement = -(layer.offsetHeight * depth)
             tl.to(layer, {y: movement, ease: "none"}, 0)
+        });
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script>
+            const descriptionPanel = document.querySelector('.description');
+
+            const pinDescriptionPanel = gsap.to(descriptionPanel, {
+                scrollTrigger: {
+                    trigger: descriptionPanel,
+                    start: "top top", 
+                    endTrigger: ".panel:last-child", 
+                    end: "bottom top",
+                    pin: true, 
+                    pinSpacing: false,
+                },
+            });
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.utils.toArray(".panel:not(.description)").forEach((panel, i) => {
+            ScrollTrigger.create({
+                trigger: panel,
+                start: "top top",
+                pin: true,
+                pinSpacing: false
+            });
+        });
+
+
+        ScrollTrigger.create({
+            snap: 1 / 4 // snap whole page to the closest section!
         });
     </script>
 </body>
