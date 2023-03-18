@@ -70,40 +70,84 @@ img {
     width: 100%;
 }
 /* About Section STARTS!!!!! */
-.rotated-text {
-    transform: rotate(270deg);
-    transform-origin: center;
-    color: var(--main-gold);
+
+#hero {
+	overflow : hidden;
+	position: relative;
+	max-width: 1920px;
+	margin: 0 auto;
 }
-.row{
-    height: 60vh;
-    overflow: hidden;
-}
-.bg-1{
-    background: url("../assets/images/tun.jpg");
-    background-size: cover;
-}
-.bg-2{
-    background: url("../assets/images/motifonwhite.png");
-    background-size: cover;
-}
-.bg-3{
-    background: url("../assets/images/heading1.jpg");
-    background-size: cover;
-}
-.bg-4{
+#content {
     background: url("../assets/images/Motifonblue.jpg");
-    background-size: cover;
+	background-size: cover;
 }
-.bg-5{
-    background-color: var(--main-blue);
+.layer {
+	background-position: bottom center;
+	background-size: auto;
+	background-repeat: no-repeat;
+	width: 100%;
+	position: fixed;
+	z-index: -1;
 }
-.bg-6{
-    background-color: #bfd6ed;
+
+#hero-mobile {
+	display: none;
+	background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/full_illustration.png") no-repeat center bottom / cover;
+	height: 320px;
 }
-.bg-7{
-    background-color: #cdd9e4;
+
+.first-section {
+	padding: 50px 0 20px 0;
 }
+.text-header {
+	font-size: 50px;
+	text-align: center;
+}
+h1 {
+	line-height: 120%;
+	margin-bottom: 30px;
+}
+p {
+	color: #ede0d5;
+	font-size: 18px;
+	line-height: 150%;
+}
+
+#hero, .layer {
+	min-height: 800px;
+}
+
+.layer-bg {
+	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_bg.jpg');
+}
+.layer-1 {
+	background-image: url('../assets/images/INDABALOGO.png');
+	background-position: center;
+}
+.layer-2 {
+	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_02.png');
+}
+.layer-3 {
+	background: rgb(23,73,115);
+    background: linear-gradient(0deg, rgba(23,73,115,1) 15%, rgba(11,23,46,1) 68%);
+	opacity: 0.7;
+}
+.layer-4 {
+	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_01.png');
+}
+.layer-overlay {
+	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_overlay.png');
+}
+
+@media only screen and (max-width: 768px) {
+	.layer-1 {
+		background-position: 26% bottom;
+	}
+	.layer-3 {
+		background-position: 35% bottom;
+	}
+}
+
 
 
 
@@ -191,7 +235,7 @@ footer .btn-primary:disabled {
 }
 
 #lightings {
-	bottom: 0;
+	bottom: -21px;
 	position: absolute;
 	width: 100%;
  
