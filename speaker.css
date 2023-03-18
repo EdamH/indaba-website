@@ -70,111 +70,6 @@ img {
 	width: 100%;
 }
 
-body,
-html {
-	overflow-x: hidden;
-}
-
-body {
-
-	font-size: 15px;
-	letter-spacing: 0.5px;
-	line-height: 1.5;
-	color: #1c1b1b;
-}
-
-a {
-	text-decoration: none;
-	color: #2f2f2f;
-}
-
-a:hover,
-a:focus {
-	outline: none;
-	text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 700;
-	margin-top: 0;
-}
-
-h1 {
-	font-size: 38px;
-}
-
-h2 {
-	font-size: 48px;
-	line-height: 1.53;
-}
-
-h3 {
-	font-size: 26px;
-}
-
-h4 {
-	font-size: 22px;
-}
-
-h5 {
-	font-size: 20px;
-}
-
-h6 {
-	font-size: 18px;
-}
-
-
-
-#mu-video {
-
-
-	background: -webkit-linear-gradient(to right, #041124, #011d47);
-
-	background: linear-gradient(to right, #041124, #011d47);
-
-
-}
-
-.mu-primary-btn:hover,
-.mu-primary-btn:focus,
-.mu-single-speakers-info p,
-.mu-single-speakers-social li a:hover,
-.mu-single-speakers-social li a:focus {
-	color: #142D4D;
-}
-
-.mu-speakers-slider .slick-next,
-.mu-speakers-slider .slick-prev {
-	background-color: #142D4D;
-}
-
-.mu-speakers-slider .slick-next:hover,
-.mu-speakers-slider .slick-prev:hover {
-	background-color: #142D4D;
-}
-
-.mu-social-media a:hover,
-.mu-social-media a:focus {
-	border: 1px solid #142D4D;
-	color: #142D4D;
-}
-
-button {
-	padding: 5px 15px;
-	border: none;
-}
-
-button:focus {
-	outline: none;
-	border: none;
-}
 
 .mu-primary-btn {
 	background-color: transparent;
@@ -194,9 +89,18 @@ button:focus {
 /*--------------------*/
 /* pre-speaker */
 /*--------------------*/
-
 #mu-prespeaker {
-	background-image: url("assets/images/subscribe-bg.jpg");
+
+
+	background: -webkit-linear-gradient(to right, #041124, #011d47);
+
+	background: linear-gradient(to right, #041124, #011d47);
+
+
+}
+
+/* #mu-prespeaker {
+
 	background-attachment: fixed;
 	background-position: center center;
 	-webkit-background-size: cover;
@@ -204,7 +108,8 @@ button:focus {
 	display: inline;
 	float: left;
 	width: 100%;
-}
+	background-image: url("assets/images/subscribe-bg.jpg");
+} */
 
 .mu-prespeaker-area {
 	display: inline;
@@ -213,10 +118,13 @@ button:focus {
 	text-align: center;
 	width: 100%;
 	color: #fff;
+	font-size: 22px;
 }
 
-
-
+.mu-prespeaker-area h2 {
+	font-size: 48px;
+	line-height: 1.53;
+}
 
 /*--------------------*/
 /* SPEAKERS */
@@ -262,13 +170,6 @@ button:focus {
 
 }
 
-.mu-speakers-slider .slick-next {
-	right: -50px;
-}
-
-.mu-speakers-slider .slick-prev {
-	left: -50px;
-}
 
 /* //single speaker info // */
 
@@ -281,15 +182,19 @@ button:focus {
 	-webkit-transition: all 0.7s ease 0s;
 	transition: all 0.7s ease 0s;
 	transform: translateY(-120%);
-
 	opacity: 0;
-
+	letter-spacing: 0.5px;
+	line-height: 1.5;
+	color: #1c1b1b;
 
 }
 
 .mu-single-speakers-info h3 {
 	margin-bottom: 4px;
 	font-size: 22px;
+	font-weight: 700;
+	margin-top: 0;
+
 }
 
 .mu-single-speakers-info p {
@@ -312,7 +217,28 @@ button:focus {
 	transition: all 0.5s;
 }
 
+
+.mu-social-media a:hover,
+.mu-social-media a:focus {
+	border: 1px solid #142D4D;
+	color: #142D4D;
+}
+
 /* Slider */
+
+.mu-primary-btn:hover,
+.mu-primary-btn:focus,
+.mu-single-speakers-info p,
+.mu-single-speakers-social li a:hover,
+.mu-single-speakers-social li a:focus {
+	color: #142D4D;
+}
+
+.mu-speakers-slider .slick-next,
+.mu-speakers-slider .slick-prev {
+	background-color: #142D4D;
+}
+
 .slick-slider {
 	position: relative;
 
@@ -425,6 +351,15 @@ button:focus {
 
 .slick-arrow.slick-hidden {
 	display: none;
+}
+
+
+.mu-speakers-slider .slick-next {
+	right: -50px;
+}
+
+.mu-speakers-slider .slick-prev {
+	left: -50px;
 }
 
 /* Slick Theme Color */
@@ -685,27 +620,20 @@ button:focus {
 }
 
 @media (max-width: 480px) {
-	.slick-prev {
-		display: none;
-	}
-
-	body {
-		font-size: 14px;
-	}
 
 	.mu-prespeaker-area {
 		padding: 100px 0;
 	}
 
-	h2 {
+	.mu-prespeaker-area h2 {
 		font-size: 28px;
 	}
 
-	h3 {
+	.mu-single-speakers-info h3 {
 		font-size: 40px;
 	}
 
-	h4 {
+	.mu-prespeaker-area h4 {
 		font-size: 20px;
 	}
 
@@ -717,15 +645,12 @@ button:focus {
 }
 
 @media (max-width: 360px) {
-	.slick-prev {
-		display: none;
-	}
 
 	.mu-prespeaker-area {
 		padding: 50px 0;
 	}
 
-	h2 {
+	.mu-prespeaker-area h2 {
 		font-size: 25px;
 	}
 
@@ -737,13 +662,10 @@ button:focus {
 }
 
 @media (max-width: 320px) {
-	h2 {
+	.mu-prespeaker-area h2 {
 		font-size: 22px;
 	}
 
-	.slick-prev {
-		display: none;
-	}
 
 	.speaker-img {
 		height: 309px;

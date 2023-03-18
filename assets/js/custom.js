@@ -61,7 +61,7 @@ speakerContainers.forEach(container => {
 		// Remove the transition effect
 
 		// infoContainer.style.display = 'none';
-		infoContainer.style.transform = 'translateY(0%)';
+		infoContainer.style.transform = 'translateY(-160%)';
 		imgcontainer.style.filter = 'blur(0px)';
 		infoContainer.style.opacity = '0';
 
