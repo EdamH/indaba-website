@@ -71,17 +71,17 @@ img {
 }
 /* About Section STARTS!!!!! */
 
-#hero {
+#About-Section #hero {
 	overflow : hidden;
 	position: relative;
 	max-width: 1920px;
 	margin: 0 auto;
 }
-#content {
+#About-Section #content {
     background: url("../assets/images/Motifonblue.jpg");
 	background-size: cover;
 }
-.layer {
+#About-Section #hero .layer {
 	background-position: bottom center;
 	background-size: auto;
 	background-repeat: no-repeat;
@@ -96,7 +96,7 @@ img {
 	height: 320px;
 }
 
-.first-section {
+#About-Section #content #container .first-section {
 	padding: 50px 0 20px 0;
 }
 .text-header {
@@ -113,37 +113,37 @@ p {
 	line-height: 150%;
 }
 
-#hero, .layer {
+#About-Section #hero .layer, #About-Section #hero {
 	min-height: 800px;
 }
 
-.layer-bg {
+#About-Section #hero .layer-bg {
 	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_bg.jpg');
 }
-.layer-1 {
+#About-Section #hero .layer-1 {
 	background-image: url('../assets/images/INDABALOGO.png');
 	background-position: center;
 }
-.layer-2 {
+#About-Section #hero .layer-2 {
 	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_02.png');
 }
-.layer-3 {
+#About-Section #hero .layer-3 {
 	background: rgb(23,73,115);
     background: linear-gradient(0deg, rgba(23,73,115,1) 15%, rgba(11,23,46,1) 68%);
 	opacity: 0.7;
 }
-.layer-4 {
+#About-Section #hero .layer-4 {
 	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_01.png');
 }
-.layer-overlay {
+#About-Section #hero .layer-overlay {
 	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_overlay.png');
 }
 
 @media only screen and (max-width: 768px) {
-	.layer-1 {
+	#About-Section #hero .layer-1 {
 		background-position: 26% bottom;
 	}
-	.layer-3 {
+	#About-Section #hero .layer-3 {
 		background-position: 35% bottom;
 	}
 }
