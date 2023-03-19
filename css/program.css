@@ -9,10 +9,7 @@ html::-webkit-scrollbar,.horizontal::-webkit-scrollbar {
   font-weight: 300;
  
 }
-body{
-	margin:0;
-	padding: 0;
-}
+
 #program h1 {
   font-family:"Rubik";
   font-size:6vh;
@@ -27,11 +24,6 @@ body{
   padding: 50px 0 0 50px;
 }
 
-#program section {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
 
 
 #program section.horizontal {
@@ -41,6 +33,7 @@ body{
 #program section.horizontal .pin-wrap,
 #program section.horizontal .animation-wrap {
     display: flex;
+	align-items: center;
     position: relative;
     z-index: 1;  
     height: 100vh;

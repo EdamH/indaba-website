@@ -18,58 +18,12 @@
     box-sizing: inherit;
 }
 
-html {
-    box-sizing: border-box;
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-}
-
-/* 460px / 16px = 28.75em */
-@media (max-width: 28.75em) {
-    html {
-        font-size: 55%;
-    }
-}
 
 /* Base styles */
 
-body {
-	font-family: 'Poppins', sans-serif;
-	font-size: 1.8rem;
-	font-weight: 400;
-	line-height: 1.4;
-	color: var(black);
-}
 
-h1,
-h2 {
-	font-family: 'Raleway', sans-serif;
-	font-weight: 700;
-}
-
-h1 {
-	font-size: 6rem;
-}
-
-h2 {
-	font-size: 4.2rem;
-}
-
-ul {
-	list-style: none;
-}
-
-a {
-	text-decoration: none;
-	color: var(--main-white);
-}
-
-img {
-	display: block;
-	width: 100%;
-}
 /* About Section STARTS!!!!! */
-#About-Section #hero {
+#About-Section #heroo {
 	overflow : hidden;
 	position: relative;
 	max-width: 1920px;
@@ -79,7 +33,7 @@ img {
     background: url("../assets/images/motif.jpg");
 	background-size: auto;
 }
-#About-Section #hero .layer {
+#About-Section #heroo .layer {
 	background-position: bottom center;
 	background-size: auto;
 	background-repeat: no-repeat;
@@ -88,7 +42,7 @@ img {
 	z-index: -1;
 }
 
-#hero-mobile {
+#heroo-mobile {
 	display: none;
 	background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/full_illustration.png") no-repeat center bottom / cover;
 	height: 320px;
@@ -112,40 +66,40 @@ img {
 	line-height: 150%;
 }
 
-#About-Section #hero .layer, #About-Section #hero {
+#About-Section #heroo .layer, #About-Section #heroo {
 	min-height: 800px;
 }
 
-#About-Section #hero .layer-bg {
+#About-Section #heroo .layer-bg {
 	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_bg.jpg');
 }
-#About-Section #hero .layer-1 {
+#About-Section #heroo .layer-1 {
 	background-image: url('../assets/images/INDABALOGO.png');
 	background-position: center;
 }
-#About-Section #hero .layer-2 {
+#About-Section #heroo .layer-2 {
 	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_02.png');
 }
-#About-Section #hero .layer-3 {
+#About-Section #heroo .layer-3 {
 	background: rgb(23,73,115);
     background: linear-gradient(0deg, rgba(23,73,115,1) 15%, rgba(11,23,46,1) 68%);
 	opacity: 0.7;
 }
-#About-Section #hero .layer-4 {
+#About-Section #heroo .layer-4 {
 	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_01.png');
 }
-#About-Section #hero .layer-overlay {
+#About-Section #heroo .layer-overlay {
 	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_overlay.png');
 }
 
-@media only screen and (max-width: 768px) {
-	#About-Section #hero .layer-1 {
+/* @media only screen and (max-width: 768px) {
+	#About-Section #heroo .layer-1 {
 		background-position: 26% bottom;
 	}
-	#About-Section #hero .layer-3 {
+	#About-Section #heroo .layer-3 {
 		background-position: 35% bottom;
 	}
-}
+} */
 
 
 
