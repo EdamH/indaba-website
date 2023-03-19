@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+html::-webkit-scrollbar,.horizontal::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+#program{ 
+  color: white;
+  font-family: "Rubik";
+  font-weight: 300;
+ 
+}
+body{
+	margin:0;
+	padding: 0;
+}
+#program h1 {
+  font-family:"Rubik";
+  font-size:6vh;
+  margin: 0;
+  padding: 50px 0 0 50px;
+}
+
+#program h2 {
+  font-family:"Rubik";
+  font-size:4vh;
+  margin: 0;
+  padding: 50px 0 0 50px;
+}
+
+#program section {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+
+#program section.horizontal {
+  overflow-x: hidden;
+}
+
+#program section.horizontal .pin-wrap,
+#program section.horizontal .animation-wrap {
+    display: flex;
+    position: relative;
+    z-index: 1;  
+    height: 100vh;
+}
+
+
+#program section.horizontal .item {
+    position: relative;
+    padding: 150px 80px;
+    flex: 0 0 500px;
+    height: calc(100vh - 300px);
+    display: flex;
+    align-items: center;
+    line-height: 1.7;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.06);
+    background-color: transparent;
+}
+
+#program section.horizontal .item:before {
+    position: absolute;
+    font-size: 100px;
+    opacity: .13;
+    font-weight: bold;    
+    z-index: -1;
+    -webkit-transform: translate(-30px, -50px);
+    transform: translate(-30px, -50px);
+    line-height: 1;
+}
+
+#program .card1 * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Rubik";
+}
+
+
+#program .card1-wrapper {
+	position: relative;
+	width: 100%;
+
+	height: 100%;
+}
+#program .card1-item {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	border-radius: 0px;
+	overflow: hidden;
+}
+#program .card1-item:hover .card1-image:after {
+	background: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 0) 10%,
+		rgba(0, 0, 0, 0.7) 50%,
+		rgba(0, 0, 0, 0.9) 100%
+	);
+}
+#program .card1-image img {
+	filter: blur(2px);
+}
+#program .card1-item:hover .card1-image img {
+	transform: scale(1.03);
+	filter: none;
+}
+#program .card1-item .card1-image {
+	width: 100%;
+	height: 100%;
+	overflow: hiddden;
+	position: relative;
+}
+#program .card1-item .card1-image:after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	background: #000;
+	background: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 0) 10%,
+		rgba(0, 0, 0, 0.7) 72%,
+		rgba(0, 0, 0, 0.9) 100%
+	);
+}
+#program .card1-item .card1-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: 0.4s;
+}
+#program .card1-item .card1-content {
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	row-gap: 20px;
+}
+#program .card1-item .card1-content .card1-tags {
+	padding: 10px 20px;
+	background-color: #061943;
+	border-radius: 0px;
+
+	color: #fff;
+  font-weight:500;
+	font-size: 15px;
+	width: max-content;
+	letter-spacing: 0.6px;
+}
+#program .card1-item .card1-content .card1-title {
+	font-size: 24px;
+	color: #fff;
+	font-weight: bold;
+	line-height: 1.4;
+}
+#program .card1-item .card1-content {
+	display: flex;
+	align-items: center;
+	column-gap: 20px;
+	font-size: 14px;
+	color: #fff;
+}
+#program .card1-item .card1-content .card1-user {
+	display: flex;
+	align-items: center;
+	column-gap: 8px;
+}
+#program .card1-item .card1-content .card1-user-img {
+	width: 36px;
+	height: 36px;
+	min-width: 36px;
+	max-width: 36px;
+	overflow: hidden;
+	border-radius: 0px;
+}
+
+
+@property --rotate {
+	syntax: "<angle>";
+	initial-value: 132deg;
+	inherits: false;
+}
+
+:root {
+	--card-height: 65vh;
+	--card-width: calc(var(--card-height) / 1.5);
+}
+
+#program {
+
+	background: #000000;
+
+}
+
+#program .card1 {
+	padding: 3px;
+	position: relative;
+	border-radius: 0px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	font-size: 1.5em;
+	color: rgb(88 199 250 / 0%);
+}
+
+#program .card1::before {
+	content: "";
+	width: 101%;
+	height: 101%;
+	border-radius: 0px;
+	background-image: linear-gradient(
+		var(--rotate),
+		#bfd6ed,
+		#225c97 43%,
+		#142d4D
+	);
+	position: absolute;
+	z-index: 0;
+	
+	
+}
+
+#program .card1::after {
+	position: absolute;
+	content: "";
+	top: calc(var(--card-height) / 12);
+	left: 0;
+	right: 0;
+	z-index: -1;
+	height: 90%;
+	width: 90%;
+	margin: 0 auto;
+	transform: scale(0.8);
+	filter: blur(calc(var(--card-height) / 6));
+	background-image: linear-gradient(
+		var(--rotate),
+		#bfd6ed,
+		#225c97 43%,
+		#142d4D
+	);
+	opacity: 1;
+	transition: opacity 0.5s;
+	animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		--rotate: 0deg;
+	}
+	100% {
+		--rotate: 360deg;
+	}
+}
