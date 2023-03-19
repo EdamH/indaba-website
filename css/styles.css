@@ -512,11 +512,11 @@ img {
 
 /* Hackathon */
 
-#Hackaton-Section .panel.blue {
+#Hackaton-Section .hackathon-panel.blue {
     background-color: #0b172e;
 }
 
-#Hackaton-Section .panel.blue div {
+#Hackaton-Section .hackathon-panel.blue div {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -524,15 +524,15 @@ img {
 
 }
 
-#Hackaton-Section .panel.blue h1{
+#Hackaton-Section .hackathon-panel.blue h1{
     font-size: 5rem;
 }
 
-#Hackaton-Section .panel.red h2 {
+#Hackaton-Section .hackathon-panel.red h2 {
     font-size: 3rem;
 }
 
-#Hackaton-Section .panel.red {
+#Hackaton-Section .hackathon-panel.red {
     background-color: #bfd6ed;
     display: flex;
     flex-direction: column;
@@ -541,7 +541,7 @@ img {
     padding-top: 10vh;
 }
 
-#Hackaton-Section .panel.orange {
+#Hackaton-Section .hackathon-panel.orange {
     background-color: #225c97;
     display: flex;
     flex-direction: column;
@@ -550,30 +550,31 @@ img {
     padding-top: 10vh;
 }
 
-#Hackaton-Section .panel {
+#Hackaton-Section .hackathon-panel {
     height: 100vh;
 }
 
+
 @media screen and (min-width: 426px) {
-    #Hackaton-Section .panel.red {
+    #Hackaton-Section .hackathon-panel.red {
             width: 50vw;
     }
     
-    #Hackaton-Section .panel.orange {
+    #Hackaton-Section .hackathon-panel.orange {
         width: 50vw;
     }
     
-    #Hackaton-Section .panel.purple {
+    #Hackaton-Section .hackathon-panel.purple {
         width: 50vw;
     }
     
-    #Hackaton-Section .panel.green {
+    #Hackaton-Section .hackathon-panel.green {
         width: 50vw;
     }
 }
 
 @media screen and (max-width:426px) {
-    #Hackaton-Section .panel.blue div.col:first-of-type {
+    #Hackaton-Section .hackathon-panel.blue div.col:first-of-type {
             display: none;
     }
 
@@ -581,11 +582,11 @@ img {
 }
 
 @media screen and (max-width:796px) {
-    #Hackaton-Section .panel.blue h1 {
+    #Hackaton-Section .hackathon-panel.blue h1 {
         font-size: 3rem;
     }
     
-    #Hackaton-Section .panel.red h2 {
+    #Hackaton-Section .hackathon-panel.red h2 {
         font-size: 2rem;
     }
 }
