@@ -30,8 +30,7 @@
 }
 
 #hero *,
-#hero *::before,
-#hero *::after {
+#Navbar * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
@@ -43,14 +42,14 @@
 	text-rendering: optimizeLegibility;
 }
 
-#hero {
+#hero,#Navbar {
 	font-size: 100%;
 	box-sizing: inherit;
 	scroll-behavior: smooth;
 	height: -webkit-fill-available;
 }
 
-#hero {
+#hero,#Navbar  {
 	font-family: "Rubik", sans-serif;
 	font-size: clamp(1rem, 2vw, 1.125rem);
 	font-weight: 400;
@@ -60,12 +59,12 @@
 	background-color: #020303;
 }
 
-#hero {
+#hero,#Navbar {
 	overflow: hidden;
 }
 
 #hero a,
-#hero button {
+#hero button,#Navbar a,#Navbar button{
 	cursor: pointer;
 	border: none;
 	outline: none;
@@ -88,7 +87,7 @@
 	padding: 6rem 0 1rem;
 }
 
-#hero .container {
+#hero .container,#Navbar .container {
 	max-width: 75rem;
 	height: auto;
 	margin: 0 auto;
@@ -201,7 +200,7 @@
 	box-shadow: var(--shadow-medium);
 }
 
-#hero .header {
+#Navbar .header {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -212,7 +211,7 @@
 	transition: all 0.35s ease;
 }
 
-#hero .header.on-scroll {
+#Navbar .header.on-scroll {
 	background: var(--color-black-300);
 	box-shadow: var(--shadow-medium);
 
@@ -222,7 +221,7 @@
 	z-index: 50;
 }
 
-#hero .navbar {
+#Navbar .navbar {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -233,7 +232,7 @@
 	margin: 0 auto;
 }
 
-#hero .brand {
+#Navbar .brand {
 	font-family: inherit;
 	font-size: 1.625rem;
 	font-weight: 600;
@@ -243,7 +242,7 @@
 	text-transform: uppercase;
 }
 
-#hero .menu {
+#Navbar .menu {
 	position: fixed;
 	top: -100%;
 	left: 0;
@@ -256,13 +255,13 @@
 	transition: all 0.4s ease-in-out;
 }
 
-#hero .menu.is-active {
+#Navbar .menu.is-active {
 	top: 0;
 	width: 100%;
 	height: auto;
 }
 
-#hero .menu-inner {
+#Navbar .menu-inner {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -270,7 +269,7 @@
 	row-gap: 1.25rem;
 }
 
-#hero .menu-link {
+#Navbar .menu-link {
 	font-family: inherit;
 	font-size: 1rem;
 	font-weight: 500;
@@ -280,7 +279,7 @@
 	transition: all 0.3s ease;
 }
 
-#hero .menu-block {
+#Navbar .menu-block {
 	display: inline-block;
 	font-family: inherit;
 	font-size: 0.875rem;
@@ -301,7 +300,7 @@
 }
 
 @media only screen and (min-width: 48rem) {
-	#hero .menu {
+	#Navbar .menu {
 		position: relative;
 		top: 0;
 		width: auto;
@@ -312,23 +311,23 @@
 		box-shadow: none;
 	}
 
-	#hero .menu-inner {
+	#Navbar .menu-inner {
 		display: flex;
 		flex-direction: row;
 		column-gap: 2rem;
 		margin: 0 auto;
 	}
 
-	#hero .menu-link {
+	#Navbar .menu-link {
 		text-transform: capitalize;
 	}
 
-	#hero .menu-block {
+	#Navbar .menu-block {
 		margin-left: 2rem;
 	}
 }
 
-#hero .burger {
+#Navbar .burger {
 	position: relative;
 	display: block;
 	cursor: pointer;
@@ -346,13 +345,13 @@
 }
 
 @media only screen and (min-width: 48rem) {
-	#hero .burger {
+	#Navbar .burger {
 		display: none;
 		visibility: hidden;
 	}
 }
 
-#hero .burger-line {
+#Navbar .burger-line {
 	position: absolute;
 	display: block;
 	right: 0;
@@ -366,15 +365,15 @@
 	transition: 0.25s ease-in-out;
 }
 
-#hero .burger-line:nth-child(1) {
+#Navbar .burger-line:nth-child(1) {
 	top: 0px;
 }
 
-#hero .burger-line:nth-child(2) {
+#Navbar .burger-line:nth-child(2) {
 	top: 0.5rem;
 }
 
-#hero .burger-line:nth-child(3) {
+#Navbar .burger-line:nth-child(3) {
 	top: 1rem;
 }
 
@@ -393,11 +392,11 @@
 	top: 0.5rem;
 	transform: rotate(-135deg);
 } */
-#hero .nav-toggle {
+#Navbar .nav-toggle {
 	z-index: 100;
 }
 
-#hero .nav-toggle:hover {
+#Navbar .nav-toggle:hover {
 	color: var(--clr-primary-1);
 	transform: rotate(90deg);
 }
@@ -802,17 +801,17 @@ body{
 
 
 /* page 2  */
-#hero .scrollable-area {
+#Navbar .scrollable-area {
 	height: 100vh;
 	padding: 100px;
 }
 
-#hero .jwpnavbar--up {
+#Navbar .jwpnavbar--up {
 	top: -68px;
 	transition: ease 0.4s;
 }
 
-#hero .jwpnavbar--scrolled {
+#Navbar .jwpnavbar--scrolled {
 	height: 68px;
 	background: var(--color-black-500);
 	box-shadow: var(--shadow-large);
@@ -820,11 +819,11 @@ body{
 
 
 
-#hero ul.menu-inner li {
+#Navbar ul.menu-inner li {
 	position: relative;
 }
 
-#hero ul.menu-inner li:hover>a::after {
+#Navbar ul.menu-inner li:hover>a::after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -837,7 +836,7 @@ body{
 	transition: transform 0.5s ease-out, transform-origin 0.5s ease-out;
 }
 
-#hero ul.menu-inner li:hover>a::after {
+#Navbar ul.menu-inner li:hover>a::after {
 	transform: scaleX(1);
 	transform-origin: bottom right;
 }
