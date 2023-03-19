@@ -70,7 +70,6 @@ img {
     width: 100%;
 }
 /* About Section STARTS!!!!! */
-
 #About-Section #hero {
 	overflow : hidden;
 	position: relative;
@@ -78,8 +77,8 @@ img {
 	margin: 0 auto;
 }
 #About-Section #content {
-    background: url("../assets/images/Motifonblue.jpg");
-	background-size: cover;
+    background: url("../assets/images/motif.jpg");
+	background-size: auto;
 }
 #About-Section #hero .layer {
 	background-position: bottom center;
@@ -98,16 +97,17 @@ img {
 
 #About-Section #content #container .first-section {
 	padding: 50px 0 20px 0;
+	display: none;
 }
 .text-header {
 	font-size: 50px;
 	text-align: center;
 }
-h1 {
+#About-Section #content .container .first-section .row h1 {
 	line-height: 120%;
 	margin-bottom: 30px;
 }
-p {
+#About-Section #content .container .first-section .row p {
 	color: #ede0d5;
 	font-size: 18px;
 	line-height: 150%;
@@ -153,88 +153,89 @@ p {
 
 /* About Section ENDS!!!!! */
 /* foooter and Pre-footer STARTS!!!!!! */
-footer {
+#Footer footer {
     font-size: 14px;
     position: relative;
+	overflow: hidden;
 }
 
-footer a {
+#Footer footer a {
     color: #fff;
 }
 
-footer a:hover {
+#Footer footer a:hover {
     color: #f8f9fa;
 }
 
-footer .form-control {
+#Footer footer .form-control {
     border-color: #343a40;
 }
 
-footer .btn-primary {
+#Footer footer .btn-primary {
     background-color: #007bff;
     border-color: #007bff;
 }
-footer .btn-primary:hover {
+#Footer footer .btn-primary:hover {
     background-color: #0069d9;
     border-color: #0062cc;
 }
-footer .btn-primary:focus,
-footer .btn-primary.focus {
+#Footer footer .btn-primary:focus,
+#Footer footer .btn-primary.focus {
   box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
-footer .bg-secondary {
+#Footer footer .bg-secondary {
   background-color: #23272b;
 }
 
-footer .text-muted {
+#Footer footer .text-muted {
   color: #adb5bd;
 }
 
-footer h5 {
+#Footer footer h5 {
   color: #fff;
 }
 
-footer ul li {
+#Footer footer ul li {
   margin-bottom: 10px;
 }
 
-footer ul li:last-child {
+#Footer footer ul li:last-child {
   margin-bottom: 0;
 }
 
-footer .input-group-addon {
+#Footer footer .input-group-addon {
   background-color: #343a40;
   border-color: #343a40;
   color: #fff;
 }
 
-footer .input-group-addon i {
+#Footer footer .input-group-addon i {
   color: #adb5bd;
 }
 
-footer .form-control:focus {
+#Footer footer .form-control:focus {
   border-color: #0062cc;
   box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
 }
 
-footer .btn-primary.disabled,
-footer .btn-primary:disabled {
+#Footer footer .btn-primary.disabled,
+#Footer footer .btn-primary:disabled {
   background-color: #007bff;
   border-color: #007bff;
 }
 
 @media (max-width: 767px) {
-  footer .row {
+   #Footer footer .row {
     flex-direction: column;
   }
   
-  footer .col-md-3:first-child {
+  #Footer footer .col-md-3:first-child {
     margin-bottom: 30px;
   }
 }
 
-#lightings {
+#Footer footer #lightings {
 	bottom: -21px;
 	position: absolute;
 	width: 100%;
@@ -242,12 +243,12 @@ footer .btn-primary:disabled {
 }
  
 @media only screen and (max-width: 600px) {
-	#lightings {
+	#Footer footer #lightings {
 		display: none;
 	}
 }
  
-#lightings section {
+#Footer footer #lightings section {
 	/*border-radius*/
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
@@ -259,7 +260,7 @@ footer .btn-primary:disabled {
  
 }
  
-#one {
+#Footer footer #lightings #one {
 	/*animation*/
 	-webkit-animation: one 5s ease-in-out infinite alternate;
 	-moz-animation: one 5s ease-in-out infinite alternate;
@@ -308,7 +309,7 @@ footer .btn-primary:disabled {
 	}
 }
  
-#two {
+#Footer footer #lightings #one #two {
 	width: 90%;
 	/*animation*/
 	-webkit-animation: two 4s ease-in-out infinite alternate;
@@ -358,7 +359,7 @@ footer .btn-primary:disabled {
 	}
 }
  
-#three {
+#Footer footer #lightings #one #two #three {
 	width: 80%;
 	/*animation*/
 	-webkit-animation: three 3s ease-in-out infinite alternate;
@@ -408,7 +409,7 @@ footer .btn-primary:disabled {
 	}
 }
  
-#four {
+#Footer footer #lightings #one #two #three #four {
 	width: 70%;
 	/*animation*/
 	-webkit-animation: four 2s ease-in-out infinite alternate;
@@ -458,7 +459,7 @@ footer .btn-primary:disabled {
 	}
 }
  
-#five {
+#Footer footer #lightings #one #two #three #four #five {
 	width: 60%;
 	/*animation*/
 	-webkit-animation: five 1s ease-in-out infinite alternate;
