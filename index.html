@@ -5,8 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>INDABAX23</title>
-    <link rel="stylesheet" href="css/hero.css">
-    <link rel="stylesheet" href="css/program.css">
     <script src="https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r73/three.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/THREE.OrbitControls.js"></script>
@@ -23,6 +21,9 @@
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <!-- speaker Style -->
     <link href="./css/speaker.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/program.css">
 </head>
 
 <body>
@@ -104,7 +105,7 @@
     
     </section>
     <!-- ****** -->
-    <section id="About-Section">
+    <!-- <section id="About-Section">
 
         <div id='hero'>
             <div class='layer-bg layer parallax' data-depth='0.10'></div>
@@ -137,10 +138,10 @@
                 </section>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- ****** -->
     <section id="Hackaton-Section" >
-        <div class="description-panel hackathon-panel blue row m-0" style="background: url(./assets/images/motif.jpg);">
+        <div class="description-panel hackathon-panel blue row m-0" style="background: url(./assets/images/motif.jpg); margin: 0;">
             <div class="col">
 
             </div>
@@ -528,39 +529,34 @@
             </div>
             </section>
             
-            
-            
-            <section class="blank">
-            <h1>Next section</h1>
-            </section>
         <script>
-            const horizontalSections = gsap.utils.toArray('section.horizontal')
-    
-    horizontalSections.forEach(function (sec, i) {	
+                const horizontalSections = gsap.utils.toArray('section.horizontal')
+            
+                horizontalSections.forEach(function (sec, i) {	
         
-        var thisPinWrap = sec.querySelector('.pin-wrap');
-        var thisAnimWrap = thisPinWrap.querySelector('.animation-wrap');
-        
-        var getToValue = () => -(thisAnimWrap.scrollWidth - window.innerWidth); 
-    
-        gsap.fromTo(thisAnimWrap, { 
-        x: () => thisAnimWrap.classList.contains('to-right') ? 0 : getToValue() 
-        }, { 
-        x: () => thisAnimWrap.classList.contains('to-right') ? getToValue() : 0, 
-        ease: "none",
-        scrollTrigger: {
-            trigger: sec,		
-            start: "top top",
-            end: () => "+=" + (thisAnimWrap.scrollWidth - window.innerWidth),
-            pin: thisPinWrap,
-            invalidateOnRefresh: true,
-            //anticipatePin: 1,
-            scrub: true,
-            //markers: true,
-        }
-        });
-    
-    });	
+                var thisPinWrap = sec.querySelector('.pin-wrap');
+                var thisAnimWrap = thisPinWrap.querySelector('.animation-wrap');
+                
+                var getToValue = () => -(thisAnimWrap.scrollWidth - window.innerWidth); 
+            
+                gsap.fromTo(thisAnimWrap, { 
+                x: () => thisAnimWrap.classList.contains('to-right') ? 0 : getToValue() 
+                }, { 
+                x: () => thisAnimWrap.classList.contains('to-right') ? getToValue() : 0, 
+                ease: "none",
+                scrollTrigger: {
+                    trigger: sec,		
+                    start: "top top",
+                    end: () => "+=" + (thisAnimWrap.scrollWidth - window.innerWidth),
+                    pin: thisPinWrap,
+                    invalidateOnRefresh: true,
+                    //anticipatePin: 1,
+                    scrub: true,
+                    //markers: true,
+                }
+                });
+            
+            });	
         </script>
             
             
