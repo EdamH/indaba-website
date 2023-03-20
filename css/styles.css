@@ -149,6 +149,10 @@
   margin-bottom: 10px;
 }
 
+/* #Footer footer ul li a{
+	color: white;
+} */
+
 #Footer footer ul li:last-child {
   margin-bottom: 0;
 }
