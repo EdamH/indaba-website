@@ -34,11 +34,13 @@
                 </div>
                 <div class="menu1" id="menu">
                     <ul class="menu1-inner">
-                        <li class="menu1-item"><a href="#" class="menu1-link">Home</a></li>
-                        <li class="menu1-item"><a href="#" class="menu1-link">IndabaX</a></li>
-                        <li class="menu1-item"><a href="#" class="menu1-link">Speakers</a></li>
-                        <li class="menu1-item"><a href="#" class="menu1-link">Schedule</a></li>
-                        <li class="menu1-item"><a href="#" class="menu1-link">Partners</a></li>
+                        <li class="menu1-item"><a href="#hero" class="menu1-link">Home</a></li>
+                        <li class="menu1-item"><a href="#About-Section" class="menu1-link">IndabaX</a></li>
+                        <li class="menu1-item"><a href="#Hackaton-Section" class="menu1-link">Hackatons</a></li>
+                        <li class="menu1-item"><a href="#Speakers-Section" class="menu1-link">Speakers</a></li>
+                        <li class="menu1-item"><a href="#schedule" class="menu1-link">Schedule</a></li>
+                        <li class="menu1-item"><a href="#partners" class="menu1-link">Partners</a></li>
+                        <li class="menu1-item"><a href="#location" class="menu1-link">Location</a></li>
                     </ul>
                 </div>
                 <a href="./index.html" class="menu1-block">Register</a>
@@ -61,16 +63,17 @@
                             Join us for 3 days packed with panels, workshops, hackathons, talks and more! If you’re an AI
                             enthusiast, you cannot miss this event!
                         </p>
-                        <button class="btn1 btn1-darken btn1-inline"><img src="assets/images/1.jpg">
+                        <a href="#About-Section">
+                        <button class="btn1 btn1-darken btn1-inline"><img src="assets/images/motifonwhite.png">
                             <div class="textt">
                                 View More<i class="bx bx-right-arrow-alt"></i></div>
-                        </button>
+                        </button></a>
                     </div>
                     <div class="banner-links">
-                        <a href="#" title=""><i class="bx bxl-facebook"></i></a>
-                        <a href="#" title=""><i class="bx bxl-instagram"></i></a>
-                        <a href="#" title=""><i class="bx bxl-twitter"></i></a>
-                        <a href="#" title=""><i class="bx bxl-youtube"></i></a>
+                        <a href="https://www.facebook.com/IndabaXTunisia/" target="_blank"><i class="bx bxl-facebook"></i></a>
+                        <a href="https://twitter.com/indabaxtunisia" target="_blank"><i class="bx bxl-twitter"></i></a>
+                        <a href="https://tn.linkedin.com/company/indabax-tunisia" target="_blank"><i class='bx bxl-linkedin-square'></i></i></a>
+                        <a href="mailto:Indabaxtunisia@gmail.com" target="_blank"><i class='bx bx-envelope'></i></a>
                     </div>
                 </div>
             </section>
@@ -87,21 +90,20 @@
                     </section>
                 </section>
             </article>
-            <section class="cointainer scrollable-area">
-            </section>
-    
-    
+
+
     
         </section>
         <script src="nav.js"></script>
+  
+
     
 
     
     
     </section>
     <!-- ****** -->
-    <!-- <section id="About-Section">
-
+    <section id="About-Section">
         <div id='heroo'>
             <div class='layer-bg layer parallax' data-depth='0.10'></div>
             <div class='layer-1 layer parallax' data-depth='0.20'></div>
@@ -110,7 +112,7 @@
             <div class='layer-overlay layer parallax' data-depth='0.85'></div>
             <div class='layer-4 layer parallax' data-depth='1.00'></div>
         </div>
-          
+ 
         <div id='content'>
             <div class='container'>
                 <section class='first-section'>
@@ -133,7 +135,7 @@
                 </section>
             </div>
         </div>
-    </section> -->
+    </section>
     <!-- ****** -->
     <section id="Hackaton-Section" >
         <div class="description-panel hackathon-panel blue row m-0" style="background: url(./assets/images/motif.jpg); margin: 0;">
@@ -327,12 +329,12 @@
     </section>
     <!-- ****** -->
     <section id="program">
-        <section class="blank1">
+        <section class="blank1" >
             <h1>PROGRAM OUTLINE X-X APRIL 2023</h1>
             <h2>Sunday 10th: The Main Event</h2>
             </section>
             
-            <section class="horizontal">
+            <section class="horizontal" id="schedule">
             <div class="pin-wrap">
                 <div class="animation-wrap to-right">
                 
@@ -604,16 +606,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                    <h5 class="mb-3">Newsletter</h5>
-                    <p class="text-muted">Stay up-to-date on the latest AI news and events.</p>
-                    <form>
-                        <div class="input-group">
-                        <input type="email" class="form-control" placeholder="Enter your email">
-                        <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i></button>
-                        </div>
-                    </form>
-                    </div>
                 </div>
             </div>
             <div class="bg-dark py-2">
@@ -639,13 +631,15 @@
              </article>
         </footer>
     </section>
-    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
 
     
     <script>
         const tl = gsap.timeline({
             scrollTrigger: {
-                trigger: "#hero",
+                trigger: "#heroo",
                 start: "top top",
                 end: "bottom top",
                 scrub: true
@@ -689,6 +683,7 @@
    
     
         <!-- ****** -->
+
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

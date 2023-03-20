@@ -33,7 +33,8 @@
 	background-size: auto;
 	background-repeat: no-repeat;
 	width: 100%;
-	position: fixed;
+	position: absolute;
+	 /* badalha l absolute wala relative khater fixed matemshish */
 	z-index: -1;
 }
 

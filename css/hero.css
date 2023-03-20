@@ -176,7 +176,8 @@
 }
 
 #hero .btn1 img {
-	opacity: 0.1;
+	opacity: 1;
+	filter: invert();
 }
 
 #hero .textt {
