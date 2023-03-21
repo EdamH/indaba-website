@@ -198,6 +198,7 @@
 	box-shadow: var(--shadow-medium);
 }
 
+
 #hero .btn1-neutral {
 	padding: 0.75rem 2rem;
 	color: var(--color-black-500);
@@ -844,4 +845,31 @@ body{
 #Navbar ul.menu1-inner li:hover>a::after {
 	transform: scaleX(1);
 	transform-origin: bottom right;
+}
+
+/* Animations */
+
+#hero .btn1 img {
+	transition: all .5s
+}
+
+#hero .btn1:hover img {
+	opacity: 0;
+}
+
+#hero .btn1 .textt {
+	transition: all .3s
+}
+
+#hero .btn1:hover .textt {
+	transform: translateX(10px) scale(1.1);
+}
+
+#hero .banner-links a{
+	transition: all .3s;
+}
+
+#hero .banner-links a:hover{
+	color: navy;
+	transform: scale(1.3);
 }
