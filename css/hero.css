@@ -551,6 +551,7 @@ body{
 	width: 100%;
 	position: relative;
 	margin: auto;
+	opacity: .5;
 
 }
 
@@ -872,4 +873,10 @@ body{
 #hero .banner-links a:hover{
 	color: navy;
 	transform: scale(1.3);
+}
+
+@media only screen and (max-width: 320px){
+	#hero .btn1{
+		display: none;
+	}
 }

@@ -188,6 +188,29 @@
   }
 }
 
+@media (max-width: 767px) {
+	#Footer footer .col-md-4 h5, #Footer footer .col-md-4 li {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	#Footer footer .col-md-4 h5{
+		font-size: 30px;
+	}
+
+	#Footer footer .col-md-4 li{
+		font-size: 20px;
+	}
+
+	#Footer footer .row p{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 14px;
+	}
+}
+
 #Footer footer #lightings {
 	bottom: -21px;
 	position: absolute;
