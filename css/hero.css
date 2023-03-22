@@ -166,19 +166,35 @@
 	border: none;
 	border-radius: 0.25rem;
 	text-transform: unset;
-	transition: all 0.3s ease-in-out;
 	height: 10vw;
 	overflow: hidden;
 	padding: 0;
-	width: 200px;
+	width: 175px;
 	height: 70px;
-
+	border-radius: 70px;
+	background-color: #225c97;
+	transition: all .2s
 }
 
-#hero .btn1 img {
+#hero .btn1 .textt {
+	transition: all .2s;
+	color: #fff;
+}
+
+#hero .btn1:hover {
+	background-color: #cdd9e4;
+	color: #000;
+}
+
+#hero .btn1:hover .textt {
+	transform: translateX(10px) scale(1.1);
+	color: black;
+}
+
+/* #hero .btn1 img {
 	opacity: 1;
 	filter: invert();
-}
+} */
 
 #hero .textt {
 	position: absolute;
@@ -191,7 +207,7 @@
 	column-gap: 0.5rem;
 }
 
-#hero .btn1-darken {
+/* #hero .btn1-darken {
 
 	color: var(--color-white-100);
 	background-color: var(--color-black-200);
@@ -204,7 +220,7 @@
 	color: var(--color-black-500);
 	background-color: var(--color-white-100);
 	box-shadow: var(--shadow-medium);
-}
+} */
 
 #Navbar .header1 {
 	position: fixed;
@@ -850,21 +866,8 @@ body{
 
 /* Animations */
 
-#hero .btn1 img {
-	transition: all .5s
-}
 
-#hero .btn1:hover img {
-	opacity: 0;
-}
 
-#hero .btn1 .textt {
-	transition: all .3s
-}
-
-#hero .btn1:hover .textt {
-	transform: translateX(10px) scale(1.1);
-}
 
 #hero .banner-links a{
 	transition: all .3s;
@@ -879,4 +882,19 @@ body{
 	#hero .btn1{
 		display: none;
 	}
+}
+
+
+.hero-accessory{
+	left:94vw;
+    bottom: 5vh;
+	width: 6vw;
+	display: none !important;
+}
+
+.hero-accessory-inverted {
+	transform: scaleX(-1);
+	width: 6vw;
+	top: -70px;
+	left: 0;
 }
