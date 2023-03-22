@@ -816,22 +816,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
-    <script>
-        const tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: "#heroo",
-                start: "top top",
-                end: "bottom top",
-                scrub: true
-            }
-        });
-
-        gsap.utils.toArray(".parallax").forEach(layer => {
-            const depth = layer.dataset.depth;
-            const movement = -(layer.offsetHeight * depth)
-            tl.to(layer, { y: movement, ease: "none" }, 0)
-        });
-    </script>
 
     <script>
         console.log(document.querySelectorAll('.hackathon-panel'))
