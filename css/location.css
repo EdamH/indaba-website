@@ -1,13 +1,46 @@
+
+
+/* Base styles */
+
+#location-section h1,
+#location-section h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+#location-section h1 {
+    font-size: 6rem;
+}
+
+#location-section h2 {
+    font-size: 4.2rem;
+}
+
+#location-section ul {
+    list-style: none;
+}
+
+#location-section a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+
+
+
 #location-section {
     height: auto;
     width: 100%;
 }
 
-.map-card {
+#location-section img {
+    height: 50px !important;
+}
+
+#location-section .map-card {
     height: 100%;
 }
 
-.map-info-area {
+#location-section .map-info-area {
     position: relative;
     top: -75px;
     background-color: #ffffff;
@@ -18,7 +51,7 @@
 
 }
 
-.contact-info {
+#location-section .contact-info {
 
     width: 20%;
     margin-left: 35%;
@@ -27,7 +60,7 @@
 
 }
 
-.single-icon {
+#location-section .single-icon {
 
     text-align: center;
     margin-top: 5%;
@@ -42,7 +75,7 @@
 
 
 @media (max-width: 480px) {
-    .contact-info {
+    #location-section .contact-info {
         width: 15%;
         margin-bottom: 10%;
         margin-left: 40%;
@@ -50,7 +83,7 @@
 }
 
 @media (max-width: 754px) {
-    .contact-info {
+    #location-section .contact-info {
         width: 17%;
         margin-bottom: 7%;
         margin-left: 40%;
@@ -58,9 +91,7 @@
 }
 
 @media (max-width: 991px) {
-
-
-    .contact-info {
+    #location-section .contact-info {
         width: 15%;
         margin-bottom: 10%;
         margin-left: 40%;
