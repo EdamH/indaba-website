@@ -13,94 +13,6 @@
 }
 
 
-
-/* Base styles */
-
-
-/* About Section STARTS!!!!! */
-/* #About-Section #heroo {
-	overflow : hidden;
-	position: relative;
-	max-width: 1920px;
-	margin: 0 auto;
-}
-#About-Section #content {
-    background: url("../assets/images/motif.jpg");
-	background-size: auto;
-}
-#About-Section #heroo .layer {
-	background-position: bottom center;
-	background-size: auto;
-	background-repeat: no-repeat;
-	width: 100%;
-	position: absolute;
-	 /* badalha l absolute wala relative khater fixed matemshish */
-	/* z-index: -1;
-} */
-/* 
-#heroo-mobile {
-	display: none;
-	background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/full_illustration.png") no-repeat center bottom / cover;
-	height: 320px;
-}
-
-#About-Section #content #container .first-section {
-	padding: 50px 0 20px 0;
-	display: none;
-}
-.text-header {
-	font-size: 50px;
-	text-align: center;
-}
-#About-Section #content .container .first-section .row h1 {
-	line-height: 120%;
-	margin-bottom: 30px;
-}
-#About-Section #content .container .first-section .row p {
-	color: #ede0d5;
-	font-size: 18px;
-	line-height: 150%;
-}
-
-#About-Section #heroo .layer, #About-Section #heroo {
-	min-height: 800px;
-}
-
-#About-Section #heroo .layer-bg {
-	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_bg.jpg');
-}
-#About-Section #heroo .layer-1 {
-	background-image: url('../assets/images/INDABALOGO.png');
-	background-position: center;
-}
-#About-Section #heroo .layer-2 {
-	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_02.png');
-}
-#About-Section #heroo .layer-3 {
-	background: rgb(23,73,115);
-    background: linear-gradient(0deg, rgba(23,73,115,1) 15%, rgba(11,23,46,1) 68%);
-	opacity: 0.7;
-}
-#About-Section #heroo .layer-4 {
-	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_01.png');
-}
-#About-Section #heroo .layer-overlay {
-	background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_overlay.png');
-} */
-
-/* @media only screen and (max-width: 768px) {
-	#About-Section #heroo .layer-1 {
-		background-position: 26% bottom;
-	}
-	#About-Section #heroo .layer-3 {
-		background-position: 35% bottom;
-	}
-} */
-
-
-
-
-/* About Section ENDS!!!!! */
 /* foooter and Pre-footer STARTS!!!!!! */
 #Footer footer {
     font-size: 14px;
@@ -491,6 +403,18 @@
 #Hackaton-Section .hackathon-panel.blue {
     background-color: #0b172e;
 
+}
+
+#Hackaton-Section .hackathon-panel.blue::before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to top, rgba(5, 57, 86, 1) 0%, rgba(5, 57, 86, 0) 50%, rgba(21, 30, 53, 1) 100%);
+		z-index: +1;
 }
 
 #Hackaton-Section .hackathon-panel.blue div {
