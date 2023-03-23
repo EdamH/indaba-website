@@ -3,26 +3,6 @@ html::-webkit-scrollbar,.horizontal::-webkit-scrollbar {
     width: 0px;
     background: transparent; /* make scrollbar transparent */
 }
-#program{ 
-  color: white;
-  font-family: "Rubik";
-  font-weight: 300;
- 
-}
-
-#program h1 {
-  font-family:"Rubik";
-  font-size:6vh;
-  margin: 0;
-  padding: 50px 0 0 50px;
-}
-
-#program h2 {
-  font-family:"Rubik";
-  font-size:4vh;
-  margin: 0;
-  padding: 50px 0 0 50px;
-}
 
 
 
@@ -60,7 +40,7 @@ html::-webkit-scrollbar,.horizontal::-webkit-scrollbar {
     position: absolute;
     font-size: 100px;
     opacity: .13;
-    font-weight: bold;    
+     
     z-index: -1;
     -webkit-transform: translate(-30px, -50px);
     transform: translate(-30px, -50px);
@@ -78,7 +58,6 @@ html::-webkit-scrollbar,.horizontal::-webkit-scrollbar {
 #program .card1-wrapper {
 	position: relative;
 	width: 100%;
-
 	height: 100%;
 }
 #program .card1-item {
@@ -88,99 +67,145 @@ html::-webkit-scrollbar,.horizontal::-webkit-scrollbar {
 	border-radius: 0px;
 	overflow: hidden;
 }
-#program .card1-item:hover .card1-image:after {
-	background: linear-gradient(
-		180deg,
-		rgba(0, 0, 0, 0) 10%,
-		rgba(0, 0, 0, 0.7) 50%,
-		rgba(0, 0, 0, 0.9) 100%
-	);
-}
-#program .card1-image img {
-	filter: blur(2px);
-}
-#program .card1-item:hover .card1-image img {
-	transform: scale(1.03);
-	filter: none;
-}
-#program .card1-item .card1-image {
+.profile {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	aspect-ratio: 1/1;
+	position: relative;
+	padding: 1.5rem;
+	color: white;
+	backface-visibility: hidden;
+	text-decoration: none;
+	overflow: hidden;
+  }
+  
+  .profile::before,
+  .profile::after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+  
+  }
+  
+  .profile::before {
+	background: linear-gradient(to top,
+		hsl(0 0% 0% / 0.79) 0%,
+		hsl(0 0% 0% / 0.787) 7.8%,
+		hsl(0 0% 0% / 0.779) 14.4%,
+		hsl(0 0% 0% / 0.765) 20.2%,
+		hsl(0 0% 0% / 0.744) 25.3%,
+		hsl(0 0% 0% / 0.717) 29.9%,
+		hsl(0 0% 0% / 0.683) 34.3%,
+		hsl(0 0% 0% / 0.641) 38.7%,
+		hsl(0 0% 0% / 0.592) 43.3%,
+		hsl(0 0% 0% / 0.534) 48.4%,
+		hsl(0 0% 0% / 0.468) 54.1%,
+		hsl(0 0% 0% / 0.393) 60.6%,
+		hsl(0 0% 0% / 0.31) 68.3%,
+		hsl(0 0% 0% / 0.216) 77.3%,
+		hsl(0 0% 0% / 0.113) 87.7%,
+		hsl(0 0% 0% / 0) 100%);
+	transition: 300ms opacity linear;
+  }
+  
+  .profile::after {
+	background: linear-gradient(45deg,
+		hsla(209, 85%, 53%, 0.5) 0,
+		hsla(210, 87%, 25%, 0.4) 100%);
+	opacity: 0;
+	transition: 300ms opacity linear;
+  }
+  
+  .profile p {
+	opacity: 0;
+	font-size: 1rem;
+	transition: 300ms opacity linear;
+  }
+  
+  .profile:focus {
+	outline: 0.5rem solid white;
+	outline-offset: -0.5rem;
+  }
+  
+  .profile:hover :is(h2, p),
+  .profile:focus :is(h2, p) {
+	transform: none;
+  }
+  
+  .profile:hover::after,
+  .profile:focus::after,
+  .profile:hover::before,
+  .profile:focus::before {
+	opacity: 0.6;
+  }
+  
+  .profile:hover p,
+  .profile:focus p {
+	opacity: 1;
+	transition-delay: 200ms;
+  }
+  
+  .profile:hover img,
+  .profile:focus img {
+	filter: grayscale(0);
+	transform: scale(1.05) rotate(1deg);
+  }
+
+  
+  .profile img {
+
 	width: 100%;
 	height: 100%;
 	overflow: hiddden;
 	position: relative;
-}
-#program .card1-item .card1-image:after {
-	content: "";
-	width: 100%;
-	height: 100%;
-	display: block;
-	position: absolute;
-	z-index: 1;
 	top: 0;
-	background: #000;
-	background: linear-gradient(
-		180deg,
-		rgba(0, 0, 0, 0) 10%,
-		rgba(0, 0, 0, 0.7) 72%,
-		rgba(0, 0, 0, 0.9) 100%
-	);
-}
-#program .card1-item .card1-image img {
-	width: 100%;
-	height: 100%;
+	left: 0;
+	margin: 0;
+	z-index: 0;
 	object-fit: cover;
-	transition: 0.4s;
-}
-#program .card1-item .card1-content {
+	filter: grayscale(1);
+	transition: filter 200ms ease, transform 250ms linear;
+  }
+
+  
+  .profile h2 {
+	font-family:"Rubik";
+	font-size:4vh;
+	margin: 0;
+	transform: translateY(10px);
+	color: white;
+	line-height: 1.2;
+	letter-spacing: 0.03ch;
+	transition: 300ms transform ease;
+  
+  }
+  
+  .profile p {
+	
+	transform: translateY(10px);
+	display: block;
+	color: white;
+	font-weight: 200;
+	opacity: 0;
+	transition: 300ms transform ease;
+  }
+#program .card1-item .card1-content  {
 	width: 100%;
 	height: 100%;
 	z-index: 1;
 	position: absolute;
-	top: 0;
-	padding: 40px;
+	
+	padding: 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	row-gap: 20px;
-}
-#program .card1-item .card1-content .card1-tags {
-	padding: 10px 20px;
-	background-color: #061943;
-	border-radius: 0px;
 
-	color: #fff;
-  font-weight:500;
-	font-size: 15px;
-	width: max-content;
-	letter-spacing: 0.6px;
-}
-#program .card1-item .card1-content .card1-title {
-	font-size: 24px;
-	color: #fff;
-	font-weight: bold;
-	line-height: 1.4;
-}
-#program .card1-item .card1-content {
-	display: flex;
-	align-items: center;
-	column-gap: 20px;
-	font-size: 14px;
-	color: #fff;
-}
-#program .card1-item .card1-content .card1-user {
-	display: flex;
-	align-items: center;
-	column-gap: 8px;
-}
-#program .card1-item .card1-content .card1-user-img {
-	width: 36px;
-	height: 36px;
-	min-width: 36px;
-	max-width: 36px;
-	overflow: hidden;
-	border-radius: 0px;
-}
 
+}
 
 @property --rotate {
 	syntax: "<angle>";
@@ -205,7 +230,7 @@ html::-webkit-scrollbar,.horizontal::-webkit-scrollbar {
 	border-radius: 0px;
 	justify-content: center;
 	align-items: center;
-	text-align: center;
+
 	display: flex;
 	font-size: 1.5em;
 	color: rgb(88 199 250 / 0%);
