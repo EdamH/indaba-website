@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+#program-section .main-page {
+ width: 100%;
+ height: 100vh;
+ font-family:"Rubik";
+ margin:0;
+}
+
+#program-section .feature-time{
+ margin-left:5rem;
+ line-height:2.5rem;
+ padding:10px;
+ border: 5px white solid;
+ color:white;
+ font-size:3rem;
+ 
+  position:absolute;
+ z-index:1;
+}
+
+#program-section section{
+  background-image: linear-gradient(to bottom, #053956, #043551, #03314d, #022d48, #012944, #032741, #05243f, #07223c, #0c213a, #102039, #131f37, #151e35);
+ background-repeat: repeat;
+}
+#program-section .section-heading2{
+  padding-top:2rem;
+  font-size:1.5rem;
+}
+#program-section .section-titles{
+ font-family:"Rubik";
+ font-size:2rem;
+ padding-top:4rem;
+ color:white;
+ width:100%;
+ text-align:center;
+ justify-content:center;
+ display:flex;
+ flex-direction:column;
+ 
+}
+#program-section .card__image {
+ opacity:0.5;
+ margin:0;
+ position: relative;
+ top: 0;
+ left: 0;
+ z-index: -1;
+ overflow: hidden;
+ display: block;
+ width: 100%;
+ height: 100%;
+ pointer-events: none;
+ background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+}
+#program-section .feature-info{
+ margin-left:20rem;
+ display:flex;
+ flex-direction:column;
+ position:absolute;
+ z-index:1;
+}
+/* @keyframes zoom {
+ from {
+  object-position: 0 50%;
+ }
+ to {
+  object-position: 100% 50%;
+ }
+} */
+#program-section .card__image img {
+ 
+ -webkit-transform: scale(1.3, 1.3);
+ transform: scale(1.3, 1.3);
+ display: block;
+ width: 200%;
+ height: 100%;
+ object-fit: cover;
+ opacity: 1;
+/*  -webkit-transition: all 0.65 ease;
+ transition: all 0.65 ease;
+ animation-name: zoom;
+ animation-duration: 30s;
+ animation-direction: alternate;
+ animation-timing-function: linear;
+ animation-iteration-count: infinite; */
+}
+#program-section  .main-page .section-smoother {
+  z-index: 900;
+  ; }
+  #program-section  .main-page .section-smoother .inner-container {
+   z-index: 1000; }
+   #program-section  .main-page .section-smoother .features {
+   width: 100%;
+   padding-top: 10rem; }
+   #program-section  .main-page .section-smoother .features .flex-container {
+    display: flex;
+    width: 100%; }
+    @media only screen and (max-width: 850px) {
+      #program-section .main-page .section-smoother .features .flex-container {
+      flex-direction: column;
+      align-items: center; } }
+      #program-section .main-page .section-smoother .features .flex-container:not(:last-of-type) {
+     margin-bottom: 1.6rem; }
+     #program-section .main-page .section-smoother .features .flex-container .feature:not(:last-of-type) {
+     margin-right: 1.6rem; }
+     @media only screen and (max-width: 850px) {
+      #program-section  .main-page .section-smoother .features .flex-container .feature:not(:last-of-type) {
+       margin-right: 0;
+       margin-bottom: 1.6rem; } }
+       #program-section .main-page .section-smoother .features .feature {
+    border-radius: 10px;
+    position: relative;
+     overflow: hidden;
+    display: flex;
+    margin:10px;
+    align-items: center;
+    box-shadow: 0 1.6rem 4.1rem rgba(255, 78, 255, 0.05);
+/*     border-radius: .7rem; */
+/*     border: 2px solid #E5D1E8; */
+    
+    height: 20rem;
+    width: 50%;
+     }
+    @media only screen and (max-width: 1000px) {
+      #program-section .main-page .section-smoother .features .feature {
+      
+      height: 20px; } }
+    @media only screen and (max-width: 850px) {
+      #program-section  .main-page .section-smoother .features .feature {
+      width: 100%;
+      height: 220px; } }
+    @media only screen and (max-width: 550px) {
+      #program-section  .main-page .section-smoother .features .feature {
+      height: 240px; } }
+    @media only screen and (max-width: 450px) {
+      #program-section  .main-page .section-smoother .features .feature {
+      height: 260px; } }
+    
+      #program-section .main-page .section-smoother .features .feature-title { 
+     width:70%;
+     color:white;
+     font-weight: 200;
+     font-size: 2rem;
+     letter-spacing: -1px;
+     text-transform: uppercase;
+     margin-bottom: 1.4rem; }
+     @media only screen and (max-width: 850px) {
+      #program-section   .main-page .section-smoother .features .feature-title {
+       
+       font-size: 21px; } }
+       #program-section .main-page .section-smoother .features .feature-description {
+     color:white;
+     font-size: 1.2rem;
+     letter-spacing: -1px;
+     font-weight: 400; }
+     @media only screen and (max-width: 850px) {
+      #program-section  .main-page .section-smoother .features .feature-description {
+       font-size: 16px; } }
