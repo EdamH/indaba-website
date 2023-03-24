@@ -5,29 +5,57 @@ gsap.to('.card__image img', {
     yoyo:true
   
     
-  }) 
+}) 
+const isTouchDevice = () => {  
+    return (('ontouchstart' in window) ||  
+        (navigator.maxTouchPoints > 0) ||  
+        (navigator.msMaxTouchPoints > 0));  
+};
+    let windowWidth = window.innerWidth;
+    let windowHeight = window.innerHeight;
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    // CSS UNITS IN PIXELS
+    const baseFontSizeString = getComputedStyle(document.querySelector('html')).fontSize;
+    const baseFontSize = +baseFontSizeString.substring(0, baseFontSizeString.length - 2);
+    let vw = windowWidth / 100;
+    let vwRestricted = windowWidth / 100;
+    let vh = windowHeight / 100;
+    let vhFull = window.outerHeight / 100;
+
+    if (windowWidth > 1950) {
+        vwRestricted = 1920 / 100;
+    }
+let scrollTimelineEnd = 'bottom 0%';
+
+if (navigator.userAgent.match(/firefox|fxios/i)) {
+    // scrollTimelineEnd = 'top -8000px';
+    scrollTimelineEnd = '50% 0%';
+}
+
+if (windowWidth < 850 || isTouchDevice()) {
+    scrollTimelineEnd = '100% 0%';
+}
   const timeline = gsap.timeline({
               scrollTrigger: {
                   trigger: '.main-page',
                   start: 'top 0%',
-                  end: '',
+                  end: scrollTimelineEnd,
                   scrub: 1,
               
               }
           });
   timeline
   .add('smoother-section-animation')
-              // .to('.section-smoother .content', {duration: 1.2, y: -110 * vh, ease: 'linear'}, 'smoother-section-animation+=.2')
-  
-  
-              .to('.section-smoother .inner-container', {duration: 1.9, y: '-110rem', ease: 'linear'}, 'smoother-section-animation+=.2')
-              .from('.section-smoother .inner-container .flex-container-2', {duration: .3, x: '4rem', ease: 'linear'}, 'smoother-section-animation+=.2')
-              .fromTo('.section-smoother .inner-container .flex-container-3', {duration: .3, x: '8rem', ease: 'linear'}, {duration: .3, x: '4rem', ease: 'linear'}, 'smoother-section-animation+=.2')
-              .fromTo('.section-smoother .inner-container .flex-container-4', {duration: .3, x: '12rem', ease: 'linear'}, {duration: .3, x: '8rem', ease: 'linear'}, 'smoother-section-animation+=.2')
-              .to('.section-smoother .inner-container .flex-container-3', {duration: .3, delay: .3, x: 0, ease: 'linear'}, 'smoother-section-animation+=.2')
-              .to('.section-smoother .inner-container .flex-container-4', {duration: .3, delay: .3, x: '4rem', ease: 'linear'}, 'smoother-section-animation+=.2')
-              .to('.section-smoother .inner-container .flex-container-4', {duration: .3, delay: .6, x: 0, ease: 'linear'}, 'smoother-section-animation+=.2')
-              // .from('.section-smoother .content', {duration: .8, y: 110 * vh, ease: 'linear'}, 'smoother-section-animation+=.2')
-              .to('.section-phone', {duration: .1, autoAlpha: 0, ease: 'linear'}, 'smoother-section-animation+=.2');
+    // .to('.section-smoother .content', {duration: 1.2, y: -110 * vh, ease: 'linear'}, 'smoother-section-animation+=.2')
+    .to('.section-smoother .inner-container', {duration: 1.9, y: '-20vh', ease: 'linear'}, 'smoother-section-animation+=.2')
+    .from('.section-smoother .inner-container .flex-container-2', {duration: .3, x: '4rem', ease: 'linear'}, 'smoother-section-animation+=.2')
+    .fromTo('.section-smoother .inner-container .flex-container-3', {duration: .3, x: '8rem', ease: 'linear'}, {duration: .3, x: '4rem', ease: 'linear'}, 'smoother-section-animation+=.2')
+    .fromTo('.section-smoother .inner-container .flex-container-4', {duration: .3, x: '12rem', ease: 'linear'}, {duration: .3, x: '8rem', ease: 'linear'}, 'smoother-section-animation+=.2')
+    .to('.section-smoother .inner-container .flex-container-3', {duration: .3, delay: .3, x: 0, ease: 'linear'}, 'smoother-section-animation+=.2')
+    .to('.section-smoother .inner-container .flex-container-4', {duration: .3, delay: .3, x: '4rem', ease: 'linear'}, 'smoother-section-animation+=.2')
+    .to('.section-smoother .inner-container .flex-container-4', {duration: .3, delay: .6, x: 0, ease: 'linear'}, 'smoother-section-animation+=.2')
+    // .from('.section-smoother .content', {duration: .8, y: 110 * vh, ease: 'linear'}, 'smoother-section-animation+=.2')
+
   
   

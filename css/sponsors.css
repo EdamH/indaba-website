@@ -1,6 +1,8 @@
 #Sponsors-Section {
-  margin-top: 50vh;
+  position: relative;
 }
+
+
 #Sponsors-Section .container{
     position: relative;
     display: flex;
