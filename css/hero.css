@@ -579,7 +579,7 @@ body{
 	width: 100%;
 	position: relative;
 	margin: auto;
-	opacity: .5;
+	opacity:.7;
 
 }
 
@@ -598,7 +598,7 @@ body{
 	}
 
 	to {
-		-webkit-box-shadow: 0 0 100px 15px #F72A3B;
+		-webkit-box-shadow: 0 0 100px 15px #1160ab;
 	}
 }
 
@@ -608,7 +608,7 @@ body{
 	}
 
 	to {
-		-moz-box-shadow: 0 0 100px 15px #F72A3B;
+		-moz-box-shadow: 0 0 100px 15px #1160ab;
 	}
 }
 
@@ -618,7 +618,7 @@ body{
 	}
 
 	to {
-		-o-box-shadow: 0 0 100px 15px #F72A3B;
+		-o-box-shadow: 0 0 100px 15px #1160ab;
 	}
 }
 
@@ -628,7 +628,7 @@ body{
 	}
 
 	to {
-		box-shadow: 0 0 100px 15px #F72A3B;
+		box-shadow: 0 0 100px 15px #1160ab;
 	}
 }
 
@@ -648,7 +648,7 @@ body{
 	}
 
 	to {
-		-webkit-box-shadow: 0 0 100px 15px #D8F05E;
+		-webkit-box-shadow: 0 0 100px 15px #1160ab;
 	}
 }
 
@@ -658,7 +658,7 @@ body{
 	}
 
 	to {
-		-moz-box-shadow: 0 0 100px 15px #D8F05E;
+		-moz-box-shadow: 0 0 100px 15px #1160ab;
 	}
 }
 
@@ -668,7 +668,7 @@ body{
 	}
 
 	to {
-		-o-box-shadow: 0 0 100px 15px #D8F05E;
+		-o-box-shadow: 0 0 100px 15px #1160ab;
 	}
 }
 
@@ -678,7 +678,7 @@ body{
 	}
 
 	to {
-		box-shadow: 0 0 100px 15px #D8F05E;
+		box-shadow: 0 0 100px 15px #1160ab;
 	}
 }
 
@@ -694,7 +694,7 @@ body{
 
 @-webkit-keyframes three {
 	from {
-		-webkit-box-shadow: 0 0 250px 20px #FFDD00;
+		-webkit-box-shadow: 0 0 250px 20px #ff0059;
 	}
 
 	to {
@@ -704,7 +704,7 @@ body{
 
 @-moz-keyframes three {
 	from {
-		-moz-box-shadow: 0 0 250px 20px #FFDD00;
+		-moz-box-shadow: 0 0 250px 20px #ff0059;
 	}
 
 	to {
@@ -714,7 +714,7 @@ body{
 
 @-o-keyframes three {
 	from {
-		-o-box-shadow: 0 0 250px 20px #FFDD00;
+		-o-box-shadow: 0 0 250px 20px #ff0059;
 	}
 
 	to {
@@ -724,7 +724,7 @@ body{
 
 @keyframes three {
 	from {
-		box-shadow: 0 0 250px 20px #FFDD00;
+		box-shadow: 0 0 250px 20px #ff0059;
 	}
 
 	to {

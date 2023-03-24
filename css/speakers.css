@@ -4,14 +4,19 @@ html::-webkit-scrollbar,.horizontal::-webkit-scrollbar {
     background: transparent; /* make scrollbar transparent */
 }
 
-
-
-#program section.horizontal {
-  overflow-x: hidden;
+#speakers{
+	background-image: linear-gradient(to bottom, #053956, #043551, #03314d, #022d48, #012944, #032741, #05243f, #07223c, #0c213a, #102039, #131f37, #151e35);;
+    background-size: cover;
+	background-repeat: repeat;
 }
 
-#program section.horizontal .pin-wrap,
-#program section.horizontal .animation-wrap {
+#speakers section.horizontal {
+  overflow-x: hidden;
+ 
+}
+
+#speakers section.horizontal .pin-wrap,
+#speakers section.horizontal .animation-wrap {
     display: flex;
 	align-items: center;
     position: relative;
@@ -20,7 +25,7 @@ html::-webkit-scrollbar,.horizontal::-webkit-scrollbar {
 }
 
 
-#program section.horizontal .item {
+#speakers section.horizontal .item {
     position: relative;
     padding: 150px 80px;
     flex: 0 0 500px;
@@ -36,7 +41,7 @@ html::-webkit-scrollbar,.horizontal::-webkit-scrollbar {
     background-color: transparent;
 }
 
-#program section.horizontal .item:before {
+#speakers section.horizontal .item:before {
     position: absolute;
     font-size: 100px;
     opacity: .13;
@@ -47,7 +52,7 @@ html::-webkit-scrollbar,.horizontal::-webkit-scrollbar {
     line-height: 1;
 }
 
-#program .card1 * {
+#speakers .card1 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -55,12 +60,12 @@ html::-webkit-scrollbar,.horizontal::-webkit-scrollbar {
 }
 
 
-#program .card1-wrapper {
+#speakers .card1-wrapper {
 	position: relative;
 	width: 100%;
 	height: 100%;
 }
-#program .card1-item {
+#speakers .card1-item {
 	width: 100%;
 	height: 100%;
 	position: relative;
@@ -193,7 +198,7 @@ html::-webkit-scrollbar,.horizontal::-webkit-scrollbar {
 	opacity: 0;
 	transition: 300ms transform ease;
   }
-#program .card1-item .card1-content  {
+#speakers .card1-item .card1-content  {
 	width: 100%;
 	height: 100%;
 	z-index: 1;
@@ -218,13 +223,7 @@ html::-webkit-scrollbar,.horizontal::-webkit-scrollbar {
 	--card-width: calc(var(--card-height) / 1.5);
 }
 
-#program {
-
-	background: #000000;
-
-}
-
-#program .card1 {
+#speakers .card1 {
 	padding: 3px;
 	position: relative;
 	border-radius: 0px;
@@ -236,7 +235,7 @@ html::-webkit-scrollbar,.horizontal::-webkit-scrollbar {
 	color: rgb(88 199 250 / 0%);
 }
 
-#program .card1::before {
+#speakers .card1::before {
 	content: "";
 	width: 101%;
 	height: 101%;
@@ -253,7 +252,7 @@ html::-webkit-scrollbar,.horizontal::-webkit-scrollbar {
 	
 }
 
-#program .card1::after {
+#speakers .card1::after {
 	position: absolute;
 	content: "";
 	top: calc(var(--card-height) / 12);
