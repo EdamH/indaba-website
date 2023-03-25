@@ -199,7 +199,7 @@
 }
 
 #hero .btn1:hover .textt {
-	transform: translateX(10px) scale(1.1);
+	transform: translateX(5px) scale(1.1);
 	color: black;
 }
 
@@ -327,10 +327,14 @@
 	border-radius: 3rem;
 	text-transform: capitalize;
 	color: var(--color-white);
-	background-color: var(--color-blue-900);
+	background-color: #225c97;
 	box-shadow: var(--shadow-medium);
 	transition: all 0.3s ease-in-out;
+}
 
+#Navbar .menu1-block:hover {
+	background-color: #cdd9e4;
+	color: #000;
 }
 
 @media only screen and (min-width: 48rem) {
@@ -886,7 +890,7 @@ body{
 }
 
 #hero .banner-links a:hover{
-	color: navy;
+	color: #225c97;
 	transform: scale(1.3);
 }
 
