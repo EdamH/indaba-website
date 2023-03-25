@@ -145,8 +145,7 @@
       }
       
     #Sponsors-Section {
-        background: rgb(23,73,115);
-        background: linear-gradient(0deg, rgba(23,73,115,1) 15%, rgba(11,23,46,1) 68%);
+        background: linear-gradient(to top, rgba(5, 57, 86, 1) 0%, #151e35 100%);
       }
       #Sponsors-Section #sp {
         display: grid;

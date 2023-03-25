@@ -1,42 +1,41 @@
 /* Base styles */
 
-#location-section h1,
-#location-section h2 {
+#Location-Section h1,
+#Location-Section h2 {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
 }
 
-#location-section h1 {
+#Location-Section h1 {
     font-size: 6rem;
 }
 
-#location-section h2 {
+#Location-Section h2 {
     font-size: 4.2rem;
 }
 
-#location-section ul {
+#Location-Section ul {
     list-style: none;
 }
 
-#location-section a {
+#Location-Section a {
     text-decoration: none;
     color: var(--main-white);
 }
 
 
 
-#location-section {
+#Location-Section {
     height: auto;
     width: 100%;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4));
+    background-image: linear-gradient(to top, rgba(8, 45, 63, 1) 0%, rgba(5, 57, 86, 1) 100%);
 }
 
-#location-section .map-card {
+#Location-Section .map-card {
     height: 100%;
-
 }
 
-.map-info-area {
+#Location-Section .map-info-area {
     position: relative;
     top: -75px;
     background-color: #ffffff;
@@ -48,7 +47,7 @@
 
 }
 
-.contact-info {
+#Location-Section .contact-info {
 
     width: 20%;
     margin-left: 35%;
@@ -57,7 +56,7 @@
 
 }
 
-.single-icon {
+#Location-Section .single-icon {
 
     text-align: center;
     margin-top: 5%;
@@ -69,7 +68,7 @@
 
 
 @media (max-width: 480px) {
-    .contact-info {
+    #Location-Section .contact-info {
         width: 15%;
         margin-bottom: 10%;
         margin-left: 40%;
@@ -77,7 +76,7 @@
 }
 
 @media (max-width: 754px) {
-    .contact-info {
+    #Location-Section .contact-info {
         width: 17%;
         margin-bottom: 7%;
         margin-left: 40%;
@@ -85,7 +84,7 @@
 }
 
 @media (max-width: 991px) {
-    .contact-info {
+    #Location-Section .contact-info {
         width: 15%;
         margin-bottom: 10%;
         margin-left: 40%;

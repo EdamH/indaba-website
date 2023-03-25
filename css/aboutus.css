@@ -81,7 +81,11 @@
 
 #ImgWrapper img {
   position: absolute;
-  box-shadow: 0 0 31px black;
+  /* box-shadow: 0 0 31px black; */
+}
+
+#ImgWrapper #img8 {
+  filter: invert();
 }
 
 #ImgWrapper #img1 {
@@ -141,6 +145,17 @@
     justify-content: center;
     align-items: center;
   }
+
+#ImgWrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
 #test, #test1, #test2{position:absolute}
 #codeby a,#codeby span{
   width:70vw;
@@ -155,4 +170,14 @@
   font-weight: 700;
   display: inline-block;
   color: var(--ColorWhiteA);
+}
+
+#codeby #test2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#codeby #test2 img {
+  display: inline-block
 }
