@@ -84,10 +84,6 @@
   /* box-shadow: 0 0 31px black; */
 }
 
-#ImgWrapper #img8 {
-  filter: invert();
-}
-
 #ImgWrapper #img1 {
   z-index: 1;
   height: 50vh;

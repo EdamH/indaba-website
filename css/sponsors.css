@@ -24,8 +24,9 @@
 
     #Sponsors-Section .container .card .face.face1{
     position: relative;
-    background-image: url("../assets/images/bgblue.png");
-    background-size: cover;
+    /* background-image: url("../assets/images/test.jpg"); */
+    background: #cdd9e4;
+    /* background-size: cover; */
     display: flex;
     justify-content: center;
     align-content:center;
@@ -232,8 +233,9 @@
         place-items: center;
         width: var(--size);
         fill: var(--color-text);
-        background-image: url("../assets/images/bgblue.png");
-        background-size: cover;
+        /* background-image: url("../assets/images/bgblue.png");
+        background-size: cover; */
+        background: #cdd9e4;
         aspect-ratio: 16/9;
         padding: calc(var(--size) / 10);
       }
