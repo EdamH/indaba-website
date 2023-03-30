@@ -334,6 +334,7 @@ body{
 	background-color: #225c97;
 	box-shadow: var(--shadow-medium);
 	transition: all 0.3s ease-in-out;
+	color: #fff;
 }
 
 #Navbar .menu1-block:hover {
@@ -492,6 +493,14 @@ body{
 
 }
 
+#hero .banner-inner h2 {
+	margin-top: 0 !important;
+}
+
+#hero .banner-inner h2:first-of-type {
+	margin-bottom: 0 !important;
+}
+
 #hero .banner-inner {
 	display: flex;
 	flex-direction: column;
@@ -546,6 +555,27 @@ body{
 
 
 /* CSS Document */
+
+
+@media only screen and (max-width: 768px) {
+	#hero {
+		display: flex;
+		align-items: center;
+	}
+}
+
+@media only screen and (max-width: 426px) {
+	#hero .btn1 {
+		display: none !important;
+	}
+}
+
+@media only screen and (max-width: 376px) {
+	#hero h2 {
+		font-size: 20px ;
+	}
+}
+
 
 #hero * {
 	padding: 0px;

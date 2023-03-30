@@ -37,7 +37,7 @@
 	background-image: url("assets/images/subscribe-bg.jpg");
 } */
 
-#Speakers-Section #mu-prespeaker .mu-prespeaker-area {
+#Speakers-Section #mu-prespeaker .mu-prespeaker-area, #program-section #mu-prespeaker .mu-prespeaker-area {
 	display: inline;
 	float: left;
 	padding: 170px 0;
@@ -47,7 +47,7 @@
 	font-size: 22px;
 }
 
-#Speakers-Section .mu-prespeaker-area h2 {
+#Speakers-Section .mu-prespeaker-area h2, #program-section .mu-prespeaker-area h2 {
 	font-size: 48px;
 	line-height: 1.53;
 }
@@ -548,11 +548,11 @@
 
 @media (max-width: 480px) {
 
-	#Speakers-Section .mu-prespeaker-area {
+	#Speakers-Section .mu-prespeaker-area, #program-section .mu-prespeaker-area {
 		padding: 100px 0;
 	}
 
-	#Speakers-Section .mu-prespeaker-area h2 {
+	#Speakers-Section .mu-prespeaker-area h2, #program-section .mu-prespeaker-area h2 {
 		font-size: 28px;
 	}
 
@@ -560,7 +560,7 @@
 		font-size: 40px;
 	}
 
-	#Speakers-Section .mu-prespeaker-area h4 {
+	#Speakers-Section .mu-prespeaker-area h4, #program-section .mu-prespeaker-area h4 {
 		font-size: 20px;
 	}
 
@@ -577,7 +577,7 @@
 		padding: 50px 0;
 	}
 
-	#Speakers-Section .mu-prespeaker-area h2 {
+	#Speakers-Section .mu-prespeaker-area h2, #program-section .mu-prespeaker-area h2 {
 		font-size: 25px;
 	}
 
@@ -589,7 +589,7 @@
 }
 
 @media (max-width: 320px) {
-	#Speakers-Section .mu-prespeaker-area h2 {
+	#Speakers-Section .mu-prespeaker-area h2, #program-section .mu-prespeaker-area h2 {
 		font-size: 22px;
 	}
 

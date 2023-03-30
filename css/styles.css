@@ -427,11 +427,11 @@
 }
 
 #Hackaton-Section .hackathon-panel.blue h1{
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
-#Hackaton-Section .hackathon-panel.red h2 {
-    font-size: 3rem;
+#Hackaton-Section .hackathon-panel h2 {
+    font-size: 2.5rem;
 }
 
 #Hackaton-Section .hackathon-panel.red {
@@ -440,16 +440,23 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding-top: 10vh;
 }
 
 #Hackaton-Section .hackathon-panel.orange {
-    background-color: #225c97;
+    background-color: #cdd9e4;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 10vh;
+    justify-content: center;
+	row-gap: 10vh;
+}
+
+#Hackaton-Section div {
+	text-align: center;
+}
+
+#Hackaton-Section div p:not(.notp){
+	text-align: justify
 }
 
 #Hackaton-Section .hackathon-panel {
@@ -457,7 +464,7 @@
 }
 
 
-@media screen and (min-width: 426px) {
+@media screen and (min-width: 769px) {
     #Hackaton-Section .hackathon-panel.red {
             width: 50vw;
     }
@@ -475,21 +482,42 @@
     }
 }
 
-@media screen and (max-width:426px) {
+@media screen and (max-width:769px) {
     #Hackaton-Section .hackathon-panel.blue div.col:first-of-type {
             display: none;
     }
-
-    
 }
 
-@media screen and (max-width:796px) {
-    #Hackaton-Section .hackathon-panel.blue h1 {
-        font-size: 3rem;
-    }
-    
-    #Hackaton-Section .hackathon-panel.red h2 {
-        font-size: 2rem;
-    }
+@media screen and (max-width:376px) {
+	#Hackaton-Section .hackathon-panel h2{
+		font-size: 30px ;
+	}
+		
+	#Hackaton-Section .hackathon-panel p {
+		font-size: 19px !important;
+	}
 }
 
+@media screen and (max-width: 375px) {
+
+	#Hackaton-Section .hackathon-panel {
+		padding-right: 2rem !important;
+		padding-left: 2rem !important;
+	}
+}
+
+@media screen and (max-width: 1320px) {
+	
+	#Hackaton-Section .hackathon-panel h1{
+		font-size: 3rem !important;
+	}
+
+}
+
+@media screen and (max-width: 375px) {
+
+	#Hackaton-Section .hackathon-panel h1 {
+		font-size: 2rem !important;
+	}
+
+}
