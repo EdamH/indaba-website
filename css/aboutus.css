@@ -139,7 +139,7 @@
 
 @media only screen and (min-width: 1024px) {
   #ImgWrapper #img8 {
-      width: 60vw;
+      width: 50vw;
   }
 }
 
@@ -186,6 +186,14 @@
 
 #codeby #test3 img {
   display: inline-block
+}
+
+#codeby #test3 img:first-of-type {
+  transform: scale(1.1);
+}
+
+#codeby #test3 img:nth-of-type(2) {
+  transform: scale(.85);
 }
 
 @media only screen and (max-width: 670px) {

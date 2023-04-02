@@ -471,7 +471,7 @@ body{
 	display: block;
 	max-width: 18rem;
 	height: auto;
-	margin-top: 2rem;
+	/* margin-top: 0.5rem; */
 	object-fit: cover;
 	justify-self: center;
 }
