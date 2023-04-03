@@ -214,6 +214,8 @@ body{
 
 #hero .textt {
 	position: absolute;
+	display: flex;
+	align-items: center;
 }
 
 #hero .btn1-inline {
