@@ -55,10 +55,12 @@
 
 #Footer footer h5 {
   color: #fff;
+  text-align: center;
 }
 
 #Footer footer ul li {
   margin-bottom: 10px;
+  text-align:center;
 }
 
 /* #Footer footer ul li a{
@@ -131,9 +133,11 @@
 }
  
 @media only screen and (max-width: 600px) {
-	#Footer footer #lightings {
+	#Footer footer #lightings,#pages_column {
 		display: none;
 	}
+	.logo_footer{width:50% ;
+	transform: translateX(50%);}
 }
  
 #Footer footer #lightings section {
