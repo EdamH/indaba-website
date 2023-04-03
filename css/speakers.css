@@ -3,9 +3,23 @@ html::-webkit-scrollbar,.horizontal::-webkit-scrollbar {
     width: 0px;
     background: transparent; /* make scrollbar transparent */
 }
+#Speakers-Section #mu-prespeaker .mu-prespeaker-area, #program-section #mu-prespeaker .mu-prespeaker-area {
+	display: block;
+	padding: 10vh;
+	height: 20vh;
+	text-align: center;
+	width: 100%;
+	color: #fff;
+}
 
-#speakers{
-	background-image: linear-gradient(to top, #053956, #043551, #03314d, #022d48, #012944, #032741, #05243f, #07223c, #0c213a, #102039, #131f37, #151e35);;
+#Speakers-Section .mu-prespeaker-area h2, #program-section .mu-prespeaker-area h2 {
+	font-size: 5vh;
+	display: block;
+}
+#speakers {
+	margin: 0;
+	padding: 0;
+	background-image: linear-gradient(to top, #053956, #043551, #03314d, #022d48, #012944, #032741, #05243f, #07223c, #0c213a, #102039, #131f37, #151e35);
     background-size: cover;
 	background-repeat: repeat;
 }
@@ -21,7 +35,7 @@ html::-webkit-scrollbar,.horizontal::-webkit-scrollbar {
 	align-items: center;
     position: relative;
     z-index: 1;  
-    height: 100vh;
+    height: 90vh;
 }
 
 
