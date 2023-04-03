@@ -1,3 +1,12 @@
+:root {
+  --color-text: navy;
+  --color-bg: papayawhip;
+  --color-bg-accent: #ecdcc0;
+  --size: clamp(10rem, 1rem + 40vmin, 30rem);
+  --gap: calc(var(--size) / 14);
+  --duration: 60s;
+
+}
 #Sponsors-Section {
   position: relative;
 }
@@ -10,7 +19,10 @@
     flex-wrap:wrap;
     
     }
-
+#Sponsors-Section .content {
+  display:flex;
+  justify-content: center;
+  width: 100%;}
 #Sponsors-Section .container .card{
     position: relative;
     }
@@ -66,6 +78,7 @@
     opacity: 1;
 
     }
+
 
     #Sponsors-Section .container .card .face.face1 .content i{
     font-size: 3em;
@@ -161,18 +174,14 @@
         color: var(--color-text);
       }
       
-      #Sponsors-Section .marquee {
+      #sp .marquee {
+      
         display: flex;
         overflow: hidden;
         user-select: none;
         gap: var(--gap);
-        mask-image: linear-gradient(
-          var(--mask-direction, to right),
-          hsl(0 0% 0% / 0),
-          hsl(0 0% 0% / 1) 20%,
-          hsl(0 0% 0% / 1) 80%,
-          hsl(0 0% 0% / 0)
-        );
+        overflow: hidden;
+        mask-image: linear-gradient(to top, #053956, #043551, #03314d, #022d48, #012944, #032741, #05243f, #07223c, #0c213a, #102039, #131f37, #151e35);
       }
       
       #Sponsors-Section .marquee__group {
