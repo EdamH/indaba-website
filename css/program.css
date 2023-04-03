@@ -22,20 +22,27 @@ html{
   position:absolute;
  z-index:1;
 }
+#program-section .feature-info{
+  margin-left:40vh;
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  z-index:1;
+ }
 
-@media only screen and (max-width: 321px){
+@media only screen and (max-width: 850px){
   #program-section .feature-time{
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   #program-section .feature-info{
-    margin-left: 150px !important;
+    margin-left: 25vh;
   }
   #program-section .feature-description{
     display: none;
   }
   #program-section .feature-title{
-    margin-bottom: 0 !important;
-    font-size: 18px !important;
+    margin-bottom: 0;
+    font-size: 18px ;
   }
 }
 
@@ -66,13 +73,7 @@ height: 10vh;
  height: 100%;
  pointer-events: none;
 }
-#program-section .feature-info{
- margin-left:40vh;
- display:flex;
- flex-direction:column;
- position:absolute;
- z-index:1;
-}
+
 /* @keyframes zoom {
  from {
   object-position: 0 50%;
