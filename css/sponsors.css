@@ -21,6 +21,7 @@
     }
 #Sponsors-Section .content {
   display:flex;
+  flex-direction: column;
   justify-content: center;
   width: 100%;}
 #Sponsors-Section .container .card{
@@ -132,6 +133,8 @@
     padding: 10px;
     margin: 15px 0 0;
     display: inline-block;
+    width: 35%;
+    text-align: center;
     }
 
     #Sponsors-Section .container .card .face.face2 .content a:hover{
