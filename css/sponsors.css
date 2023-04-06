@@ -54,10 +54,10 @@
     inset 0 0 60px whitesmoke,
     inset 20px 0 80px #225c97,
     inset -20px 0 80px #a8b4c0,
-    inset 20px 0 300px #225c97,
+    /* inset 20px 0 300px #225c97, */
     inset -20px 0 300px #a8b4c0,
-    0 0 50px #fff,
-    -10px 0 80px #225c97,
+    /* 0 0 50px #fff, */
+    -10px -10px 80px #225c97,
     10px 0 80px #a8b4c0;
 
     }
