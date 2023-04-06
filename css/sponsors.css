@@ -38,7 +38,7 @@
     #Sponsors-Section .container .card .face.face1{
     position: relative;
     /* background-image: url("../assets/images/test.jpg"); */
-    background: #cdd9e4;
+    background: linear-gradient(to top, #cdd9e4 0%, #FFF 40%, #FFF 60%, #cdd9e4 100%) !important;
     /* background-size: cover; */
     display: flex;
     justify-content: center;
