@@ -189,6 +189,10 @@
   display: inline-block
 }
 
+#codeby #test3 a {
+  position: absolute !important;
+}
+
 #codeby #test3 img:first-of-type {
   transform: scale(1.1);
 }
