@@ -446,6 +446,23 @@ body{
 	transform: rotate(90deg);
 }
 
+#hero {
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+}
+
+@media screen and (min-width: 1800px) and (min-height: 1080px) {
+	#hero .banner-column{
+		transform: scale(1.5);
+	}
+	#Navbar .container1{
+		max-width: none;
+		padding: 0 15vw;
+		transform: scale(1.2)
+	}
+}
+
 #hero .banner-column {
 	position: relative;
 	display: grid;
@@ -464,7 +481,7 @@ body{
 	#hero .banner-column {
 		grid-template-columns: 1fr max-content;
 		column-gap: 4rem;
-		margin-top: 3rem;
+		/* margin-top: 3rem; */
 	}
 }
 
