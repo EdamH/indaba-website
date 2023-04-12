@@ -6,6 +6,14 @@ gsap.to('.card__image img', {
   
     
 }) 
+gsap.to('.map-info-area img', {
+    x:100,
+    duration:10,
+    repeat:-1,
+    yoyo:true
+  
+    
+}) 
 const isTouchDevice = () => {  
     return (('ontouchstart' in window) ||  
         (navigator.maxTouchPoints > 0) ||  
