@@ -39,7 +39,7 @@ function LandingPageScrollTrigger() {
         .to('#codeby #test2', { y: 0, opacity: 0 }, 19)
       .from('#codeby #test3', { y: 130, opacity: 0 }, 21)
         .to('#codeby #test3', { y: 0, opacity: 0 }, 24)
-      .to('#ImgWrapper #img8', { transform: 'translateZ(0px)', }, 26)
+      // .to('#ImgWrapper #img8', { transform: 'translateZ(0px)', }, 26)
 
 };
         
