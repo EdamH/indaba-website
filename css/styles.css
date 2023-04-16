@@ -447,6 +447,10 @@
 	row-gap: 5vh;
 }
 
+#Hackaton-Section .hackathon-zindi{
+	height: 50px;
+}
+
 #Hackaton-Section .hackathon-panel.orange {
     background-color: #DFEBF6;
     display: flex;
