@@ -203,6 +203,21 @@ html::-webkit-scrollbar,.horizontal::-webkit-scrollbar {
   
   }
   
+  .profile .linkdin-icon{
+		transform: translateY(10px);
+		display: block;
+		color: white;
+		font-weight: 200;
+		opacity: 0;
+		transition: 300ms transform ease;
+  }
+
+  .profile:hover .linkdin-icon,
+  .profile:focus .linkdin-icon {
+  	opacity: 1;
+  	transition-delay: 200ms;
+  }
+
   .profile p {
 	
 	transform: translateY(10px);
