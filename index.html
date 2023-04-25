@@ -183,7 +183,7 @@
     <!-- ****** -->
     <section id="Speakers-Section">
 
-        <!-- <section id="mu-prespeaker" style="background: linear-gradient(to bottom, rgba(5, 57, 86, 1) 0%, rgba(21, 30, 53, 1) 100%);; margin: 0; background-size:auto;">
+        <section id="mu-prespeaker" style="background: linear-gradient(to bottom, rgba(5, 57, 86, 1) 0%, rgba(21, 30, 53, 1) 100%);; margin: 0; background-size:auto;">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -199,12 +199,40 @@
 
 
 
-        </section> -->
+        </section>
         
         
     </section>
     <!-- ****** -->
-    <!-- <section id="speakers">
+    <div style="z-index: 9999;" class="modal fade" id="myModal1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="background-color: #DFEBF6;">
+    
+                <div class="modal-header">
+                    <div class="d-flex flex-column align-items-start">
+                        <h3 class="modal-title">Oliver Bent</h3>
+                        <p class="mb-0">Co-founder and CEO at InstaDeep</p>
+                    </div>
+                    <span class="close fs-1" data-bs-dismiss="modal">&times;</span>
+                </div>
+    
+                <div class="modal-body">
+                    <h4>Biography:</h4>
+                    <p>Oliver Bent is an accomplished researcher with a DPhil from the AIMS CDT (Autonomous Intelligent Machines and Systems)
+                    program at the University of Oxford, and currently serves as a senior software engineer on DeepChain core technologies
+                    at InstaDeep. His research has focused on the application of machine learning for decision making from computationally
+                    expensive simulation models.
+                    Oliver also holds his Master of Engineering Science (M.Eng.) degree from the University of Oxford and has worked with
+                    numerous organisations internationally, gaining practical experience in applying machine learning to high-impact
+                    real-world scenarios.
+                    He is dedicated to leveraging machine learning to drive advancements in various domains, including diseases, healthcare
+                    and education.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="speakers">
          <section class="blank1" >
             
          
@@ -215,13 +243,13 @@
                 <div class="animation-wrap to-right">
 
 
-                    <div class="item">  
+                    <div class="item" data-bs-toggle="modal" data-bs-target="#myModal1">  
                         <div class="card1">    
                             <div  class="profile sm-2 card1-item">
-                                <img class="card1-image" src="https://www.indabaxtunisia.com/2021/wp-content/uploads/sites/3/2021/09/InstaDeep-Karim-Beguir.jpg" />
+                                <img class="card1-image" src="./assets/images/oliverB.jpg" />
                                 <div class="card1-content">
-                                    <h2 class="profile__name">Karim Beguir</h2>
-                                    <p>Co-founder and CEO at InstaDeep </p>
+                                    <h2 class="profile__name">Oliver Bent</h2>
+                                    <p>Senior Software Engineer at InstaDeep </p>
                                   
                                 </div>
                                 
@@ -299,7 +327,7 @@
 
                 </div>
             </div>
-        </section> -->
+        </section>
 
 
         <!-- <section class="blank" >
@@ -583,7 +611,7 @@
                                           
                                         </div>
                                     </div>
-                                    <div class="feature">
+                                    <div class="feature" data-bs-toggle="modal" data-bs-target="#myModal">
                                         
                                           <figure  class="card__image">
                   <img src="./assets/images/test.jpg" alt="Short description">
@@ -721,7 +749,7 @@
     
                             </div>
     
-                            <div class="feature" data-bs-toggle="modal" data-bs-target="#myModal">
+                            <div class="feature">
     
                                 <figure class="card__image">
                                     <img src="./assets/images/test.jpg" alt="Short description">
