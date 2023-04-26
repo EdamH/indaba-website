@@ -35,6 +35,11 @@ html{
   z-index:1;
  }
 
+#program-section .multiple-workshops:hover{
+  cursor: pointer;
+}
+
+
 @media only screen and (max-width: 850px){
   #program-section .feature-time{
     font-size: 1.5rem;

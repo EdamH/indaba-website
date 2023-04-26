@@ -472,7 +472,6 @@
     height: 100vh;
 }
 
-
 @media screen and (min-width: 769px) {
     #Hackaton-Section .hackathon-panel.red {
             width: 50vw;
@@ -558,4 +557,30 @@
 #Hackaton-Section .regbut:hover {
 	background-color: #cdd9e4;
 	color: #000;
+}
+
+/* Modals */
+
+.bx.bxl-linkedin{
+	transition: all .3s;
+	color: #011d47;
+}
+
+.bx.bxl-linkedin:hover{
+	cursor: pointer;
+	color: #225c97;
+	transform: scale(1.2);
+}
+
+.close.fs-1 {
+	transition: all .3s;
+	color: #011d47;
+	display: flex;
+	align-items: flex-start;
+}
+
+.close.fs-1:hover {
+	cursor: pointer;
+	color: #225c97;
+	transform: scale(1.2);
 }

@@ -241,6 +241,10 @@ html::-webkit-scrollbar,.horizontal::-webkit-scrollbar {
 
 }
 
+#speakers .card1:hover{
+	cursor: pointer;
+}
+
 @property --rotate {
 	syntax: "<angle>";
 	initial-value: 132deg;
