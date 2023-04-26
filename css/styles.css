@@ -561,12 +561,12 @@
 
 /* Modals */
 
-.bx.bxl-linkedin{
+.modal .bx.bxl-linkedin{
 	transition: all .3s;
 	color: #011d47;
 }
 
-.bx.bxl-linkedin:hover{
+.modal .bx.bxl-linkedin:hover{
 	cursor: pointer;
 	color: #225c97;
 	transform: scale(1.2);
@@ -583,4 +583,16 @@
 	cursor: pointer;
 	color: #225c97;
 	transform: scale(1.2);
+}
+
+.footer-icon.fa{
+	font-size: 17px;
+}
+
+@media screen and (max-width: 700px) {
+
+	.footer-icon.fa {
+			font-size: 20px;
+		}
+
 }

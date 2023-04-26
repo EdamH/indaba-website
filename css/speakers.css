@@ -143,6 +143,10 @@ html::-webkit-scrollbar,.horizontal::-webkit-scrollbar {
 	opacity: 0;
 	font-size: 1rem;
 	transition: 300ms opacity linear;
+	/* -webkit-text-stroke: .3px #011d47; */
+	-webkit-text-fill-color: white;
+	text-stroke: .3px #011d47;
+	text-fill-color: white;
   }
   
   .profile:focus {
@@ -196,7 +200,11 @@ html::-webkit-scrollbar,.horizontal::-webkit-scrollbar {
 	font-size:4vh;
 	margin: 0;
 	transform: translateY(10px);
-	color: white;
+	-webkit-text-stroke: 1px #011d47;
+	/* -webkit-text-fill-color: #cdd9e4; */
+	-webkit-text-fill-color: white;
+	text-stroke: 1px #011d47;
+	text-fill-color: white;
 	line-height: 1.2;
 	letter-spacing: 0.03ch;
 	transition: 300ms transform ease;
@@ -204,7 +212,7 @@ html::-webkit-scrollbar,.horizontal::-webkit-scrollbar {
   }
   
   .profile .linkdin-icon{
-		transform: translateY(10px);
+		transform: translateY(5px);
 		display: block;
 		color: white;
 		font-weight: 200;
@@ -232,7 +240,6 @@ html::-webkit-scrollbar,.horizontal::-webkit-scrollbar {
 	height: 100%;
 	z-index: 1;
 	position: absolute;
-	
 	padding: 10px;
 	display: flex;
 	flex-direction: column;
