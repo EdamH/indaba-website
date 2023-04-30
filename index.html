@@ -11,6 +11,7 @@
     <meta property="og:image" content="./assets/images/ogthumbnail.png">
     <meta name="og:description"
     content="IndabaX is a Deep Learning Indaba local event in Africa, bringing together AI communities to network and learn. Topics include Machine Learning and Deep Learning, catering to participants of all expertise levels. Join workshops and keynotes facilitated by regional AI experts. 🌍✨">
+    
 
     <meta property="og:title" content="IndabaX Tunisia 2023">
     <title>IndabaX Tunisia 2023</title>
@@ -33,15 +34,17 @@
     <!-- speaker Style -->
     <link href="./css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/hero.css">
-    <link rel="stylesheet" href="./css/speaker.css">
     <link rel="stylesheet" href="./css/speakers.css">
     <link rel="stylesheet" href="./css/location.css">
     <link rel="stylesheet" href="./css/sponsors.css">
     <link rel="stylesheet" href="./css/program.css">
     <link rel="stylesheet" href="./css/aboutus.css">
+    <link rel="stylesheet" href="./css/pre.css">
 </head>
 
 <body > 
+    <div class="loader">
+    </div>
     <!-- START Nav -->
     <section id="Navbar" style="overflow: hidden;">
         <header class="header1" id="header">
@@ -765,11 +768,11 @@
                                       </div>
                                         <div class="feature-info">
                                          <div class="feature-title">
-                                           Keynote #3
+                                            Generative AI at Africa's Crossroads
                                           </div>
-                                           <!-- <div class="feature-description">
-                                           By Amanda Minnich
-                                          </div> -->
+                                           <div class="feature-description">
+                                           By Firas Ben Hassan
+                                          </div>
                                           
                                         </div>
                                     </div>
@@ -1422,7 +1425,6 @@
         crossorigin="anonymous"></script>
 
     <script>
-        console.log(document.querySelectorAll('.hackathon-panel'))
         const descriptionPanel = document.querySelector('.description-panel');
         gsap.registerPlugin(ScrollTrigger);
 
@@ -1460,7 +1462,7 @@
     <script type="text/javascript" src="assets/js/slick.min.js"></script>
     <!-- Custom js -->
     <script type="text/javascript" src="assets/js/about.js"></script>
-    <script type="text/javascript" src="assets/js/sponsors.js"></script>
+    <script src="./assets/js/pre.js" charset="utf-8"></script>
 
 </body>
 
