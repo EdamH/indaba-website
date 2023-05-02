@@ -29,9 +29,9 @@
     }
 
 #Sponsors-Section .container .card .face{
-    width:300px;
+    width: 300px;
     height: 200px;
-    transition:.4s;
+    transition: .4s;
 
     }
 
@@ -67,11 +67,6 @@
     opacity: 1;
     transition:  0.5s;
     text-align: center;
-
-
-
-
-
 
     }
 
@@ -176,6 +171,8 @@
         line-height: 1.5;
         color: var(--color-text);
       }
+
+      #sponsor
       
       #sp .marquee {
       
