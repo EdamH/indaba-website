@@ -232,6 +232,19 @@ html::-webkit-scrollbar,.horizontal::-webkit-scrollbar {
 	transition: 300ms transform ease;
   
   }
+
+  @media (max-width: 768px){
+	.profile h2{
+		font-size: 3vh;
+		-webkit-text-stroke: .5px #011d47;
+		text-stroke: .5px #011d47;
+	}
+	.profile p {
+		font-size: 12px;
+	}
+  }
+	
+  
   
   .profile .linkdin-icon{
 		transform: translateY(5px);

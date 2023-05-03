@@ -269,14 +269,11 @@ body{
 	margin: 0 auto;
 }
 
-#Navbar .brand1 {
-	font-family: inherit;
-	font-size: 1.625rem;
-	font-weight: 600;
-	line-height: 1.5;
-	letter-spacing: -1px;
-	color: var(--color-white-100);
-	text-transform: uppercase;
+@media only screen and (max-width: 48rem){
+	#Navbar .navbar1 {
+		column-gap: .2rem
+	}
+
 }
 
 #Navbar .menu1 {
