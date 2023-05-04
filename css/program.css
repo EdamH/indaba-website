@@ -10,7 +10,7 @@
 }
 @media only screen and (max-width: 850px){
   #program-section .main-page{
-    height: 530vh;
+    height: auto;
   }
 }
 
@@ -58,6 +58,15 @@ html{
   }
 }
 
+@media only screen and (max-width: 500px) {
+	#program-section .main-page .section-smoother .features .feature-title{
+		width: 96%!important;
+		font-size: 13px!important;
+	}
+	#program-section .main-page .section-smoother .features .feature{
+		height: 140px!important;
+	}
+}
 @media only screen and (max-width: 426px) {
   
   #program-section .feature-info {

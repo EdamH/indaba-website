@@ -403,6 +403,10 @@
 /* foooter and Pre-footer ENDS!!!!!! */
 
 /* Hackathon */
+#Hackaton-Section{
+	background: #053856;
+	margin-top: -2px;
+}
 
 #Hackaton-Section .hackathon-panel.blue {
     background-color: #0b172e;

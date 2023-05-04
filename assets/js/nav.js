@@ -7,6 +7,7 @@ if (burgerMenu && navbarMenu) {
    burgerMenu.addEventListener("click", () => {
       burgerMenu.classList.toggle("is-active");
       navbarMenu.classList.toggle("is-active");
+	  $('.nav-toggle').toggleClass("active");
    });
 }
 
