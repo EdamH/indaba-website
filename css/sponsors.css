@@ -37,7 +37,6 @@
 
     #Sponsors-Section .container .card .face.face1{
     position: relative;
-    /* background-image: url("../assets/images/test.jpg"); */
     background: linear-gradient(to top, #cdd9e4 0%, #FFF 40%, #FFF 60%, #cdd9e4 100%) !important;
     /* background-size: cover; */
     display: flex;
@@ -46,6 +45,10 @@
     align-items: center;
     z-index: 1;
     transform: translateY(100px);
+    }
+
+    #Sponsors-Section .container .card .face.face1{
+      background: linear-gradient(to top, #cdd9e4 0%, #FFF 30%, #FFF 70%, #cdd9e4 100%) !important;
     }
 
     #Sponsors-Section .container .card:hover .face.face1{
